@@ -11,11 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ContactController@index');
 
-Route::get('id{user_id?}', 'UserController@user');
-
-Route::get('form', 'UserController@form');
-Route::post('form', 'UserController@formPost');
+Route::get('contact/{contact_id?}', 'ContactController@contact');
