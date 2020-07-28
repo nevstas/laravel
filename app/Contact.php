@@ -15,6 +15,16 @@ class Contact extends Model
         return $this->mb_ucfirst($value, 'UTF-8');
     }
 
+    protected function getLastNameAttribute($value)
+    {
+        return $this->mb_ucfirst($value, 'UTF-8');
+    }
+
+    protected function getPatronymicAttribute($value)
+    {
+        return $this->mb_ucfirst($value, 'UTF-8');
+    }
+
     /*
      * Перенести в другое место
      */

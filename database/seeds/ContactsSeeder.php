@@ -14,6 +14,7 @@ class ContactsSeeder extends Seeder
         DB::table('contacts')->insert([
             'first_name' => 'Иван',
             'last_name' => 'Туров',
+            'patronymic' => 'Викторович',
             'phone' => '+375331112233',
             'address' => 'Бобруйск, ул. Минская 27-39',
             'created_at' => DB::raw('NOW()'),
@@ -23,6 +24,7 @@ class ContactsSeeder extends Seeder
         DB::table('contacts')->insert([
             'first_name' => 'Андрей',
             'last_name' => 'Ноден',
+            'patronymic' => 'Михайлович',
             'phone' => '+375335558899',
             'address' => 'Бобруйск, ул. Гоголя 23-90',
             'created_at' => DB::raw('NOW()'),
@@ -32,6 +34,7 @@ class ContactsSeeder extends Seeder
         DB::table('contacts')->insert([
             'first_name' => 'Сергей',
             'last_name' => 'Аксенов',
+            'patronymic' => 'Андреевич',
             'phone' => '+375332736353',
             'address' => 'Бобруйск, ул. Лынькова 162-48',
             'created_at' => DB::raw('NOW()'),
@@ -41,6 +44,7 @@ class ContactsSeeder extends Seeder
         DB::table('contacts')->insert([
             'first_name' => 'Дима',
             'last_name' => 'Томин',
+            'patronymic' => 'Олегович',
             'phone' => '+375339383737',
             'address' => 'Бобруйск, пр-т. Строителей 39-58',
             'created_at' => DB::raw('NOW()'),

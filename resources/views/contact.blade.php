@@ -15,6 +15,10 @@
                 <td>{{ $contact->last_name }}</td>
             </tr>
             <tr>
+                <td>Отчество</td>
+                <td>{{ $contact->patronymic }}</td>
+            </tr>
+            <tr>
                 <td>Телефон</td>
                 <td>{{ $contact->phone }}</td>
             </tr>

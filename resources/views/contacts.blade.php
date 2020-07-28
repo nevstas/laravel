@@ -10,6 +10,7 @@
             <th>#</th>
             <th>Имя</th>
             <th>Фамилия</th>
+            <th>Отчество</th>
             <th>Телефон</th>
             <th>Адрес</th>
             <th>Просмотров</th>
@@ -21,6 +22,7 @@
                 <th>{{ $key + 1  }}</th>
                 <td><a href="/contact/{{ $contact->id }}">{{ $contact->first_name }}</a></td>
                 <td>{{ $contact->last_name }}</td>
+                <td>{{ $contact->patronymic }}</td>
                 <td>{{ $contact->phone }}</td>
                 <td>{{ $contact->address }}</td>
                 <td>{{ $contact->counter_view }}</td>
