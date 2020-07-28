@@ -6,19 +6,12 @@
 
         <title>@yield('title')</title>
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+{{--        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">--}}
+{{--        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>--}}
 
-        <style>
-            .table-tasks {
-                margin-top: 40px;
-            }
+{{--        <link href="{{asset('sass/app.css')}}" rel="stylesheet" type="text/css"/>--}}
+        <link href="{{ URL::asset('css/app.css') }}" rel="stylesheet" type="text/css"/>
 
-            .title {
-                margin-top: 20px;
-                margin-bottom: 20px;
-            }
-        </style>
     </head>
     <body>
 

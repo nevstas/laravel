@@ -2,9 +2,9 @@
 @section('title', 'Телефонный справочник')
 
 @section('content')
-    <h1 class="title">Телефонный справочник</h1>
+    <h1 class="contacts__title">Телефонный справочник</h1>
 
-    <table class="table table-bordered table-tasks">
+    <table class="table table-bordered contacts__table">
         <thead>
         <tr>
             <th>#</th>

@@ -2,9 +2,9 @@
 @section('title', 'Контакт "' . $contact->first_name . '"')
 
 @section('content')
-    <h1 class="title">Контакт "{{ $contact->first_name }}"</h1>
+    <h1 class="contacts__title">Контакт "{{ $contact->first_name }}"</h1>
 
-    <table class="table table-bordered table-tasks">
+    <table class="table table-bordered contacts__table">
         <tbody>
             <tr>
                 <td>Имя</td>
