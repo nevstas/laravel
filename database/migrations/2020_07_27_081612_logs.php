@@ -14,11 +14,10 @@ class Logs extends Migration
     public function up()
     {
         Schema::create('logs', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->bigInteger('contact_id')->unsigned();
+            $table->Increments('id');
+            $table->Integer('contact_id')->unsigned();
             $table->enum('status', ['create', 'view', 'delete']);
             $table->timestamps();
-
         });
 
         Schema::table('logs', function(Blueprint $table) {

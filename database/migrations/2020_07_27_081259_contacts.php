@@ -14,15 +14,14 @@ class Contacts extends Migration
     public function up()
     {
         Schema::create('contacts', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('name');
+            $table->Increments('id');
+            $table->string('first_name');
             $table->string('phone');
             $table->string('address');
             $table->integer('counter_view')->default(0);
             $table->enum('is_delete', ['Y', 'N'])->default('N');
+            $table->timestamps();
         });
-
-        (new \ContactsSeeder())->run();
     }
 
     /**
