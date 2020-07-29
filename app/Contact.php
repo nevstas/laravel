@@ -12,6 +12,7 @@ class Contact extends Model
         'patronymic',
         'phone',
         'address',
+        'avatar',
         'counter_view',
         'is_delete',
     ];
@@ -34,8 +35,8 @@ class Contact extends Model
     protected function getFormatNameAttribute()
     {
         return $this->mb_ucfirst($this->last_name) . " " .
-            mb_substr(strtoupper($this->first_name), 0, 1) . ". " .
-            mb_substr(strtoupper($this->patronymic), 0, 1) . ".";
+            $this->mb_ucfirst(mb_substr($this->first_name, 0, 1)) . ". " .
+            $this->mb_ucfirst(mb_substr($this->patronymic, 0, 1)) . ".";
     }
 
     /*

@@ -29,6 +29,7 @@ class ContactRequest extends FormRequest
             'patronymic' => 'required|max:255',
             'phone' => 'required|max:255',
             'address' => 'required|max:255',
+            'avatar' => 'required',
         ];
     }
 
@@ -40,6 +41,7 @@ class ContactRequest extends FormRequest
             'patronymic.required' => 'Заполните отчество',
             'phone.required' => 'Заполните телефон',
             'address.required' => 'Заполните адрес',
+            'avatar.required' => 'Загрузите аватар',
 
             'first_name.max' => 'Имя не должно превышать 255 символов',
             'last_name.max' => 'Фамилия не должна превышать 255 символов',

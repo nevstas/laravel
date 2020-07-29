@@ -4,6 +4,10 @@
 @section('content')
     <h1 class="contact__title">Контакт "{{ $contact->format_name }}"</h1>
 
+    <div class="contact__img-container">
+        <img class="contact__img" src="{{ asset('storage/' . $contact->avatar) }}">
+    </div>
+
     <table class="table table-bordered contact__table">
         <tbody>
             <tr>
@@ -32,4 +36,6 @@
             </tr>
         </tbody>
     </table>
+
+    <a class="btn btn-primary contact__button-back" href="/" role="button">Назад</a>
 @endsection

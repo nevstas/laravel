@@ -17,6 +17,7 @@ class ContactsSeeder extends Seeder
             'patronymic' => 'Викторович',
             'phone' => '+375331112233',
             'address' => 'Бобруйск, ул. Минская 27-39',
+            'avatar' => 'avatar/no-image.jpg',
             'created_at' => DB::raw('NOW()'),
             'updated_at' => DB::raw('NOW()'),
         ]);
@@ -27,6 +28,7 @@ class ContactsSeeder extends Seeder
             'patronymic' => 'Михайлович',
             'phone' => '+375335558899',
             'address' => 'Бобруйск, ул. Гоголя 23-90',
+            'avatar' => 'avatar/no-image.jpg',
             'created_at' => DB::raw('NOW()'),
             'updated_at' => DB::raw('NOW()'),
         ]);
@@ -37,6 +39,7 @@ class ContactsSeeder extends Seeder
             'patronymic' => 'Андреевич',
             'phone' => '+375332736353',
             'address' => 'Бобруйск, ул. Лынькова 162-48',
+            'avatar' => 'avatar/no-image.jpg',
             'created_at' => DB::raw('NOW()'),
             'updated_at' => DB::raw('NOW()'),
         ]);
@@ -47,6 +50,7 @@ class ContactsSeeder extends Seeder
             'patronymic' => 'Олегович',
             'phone' => '+375339383737',
             'address' => 'Бобруйск, пр-т. Строителей 39-58',
+            'avatar' => 'avatar/no-image.jpg',
             'created_at' => DB::raw('NOW()'),
             'updated_at' => DB::raw('NOW()'),
         ]);

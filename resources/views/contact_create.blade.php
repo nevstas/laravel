@@ -15,7 +15,7 @@
             </div>
         @endif
 
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
             <div class="form-group row">
                 <label for="last_name" class="col-sm-2 col-form-label">Фамилия</label>
@@ -48,9 +48,15 @@
                 </div>
             </div>
             <div class="form-group row">
+                <label for="avatar" class="col-sm-2 col-form-label">Аватар</label>
+                <div class="col-sm-10">
+                    <input type="file" class="form-control-file" id="avatar" name="avatar">
+                </div>
+            </div>
+            <div class="form-group row">
                 <div class="col-sm-12">
                     <button type="submit" class="btn btn-success">Добавить</button>
-                    <a class="btn btn-primary contact__button-back" href="/" role="button">Назад</a>
+                    <a class="btn btn-primary contact__button-back--create" href="/" role="button">Назад</a>
                 </div>
             </div>
         </form>

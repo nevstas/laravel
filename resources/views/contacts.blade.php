@@ -10,6 +10,7 @@
         <thead>
         <tr>
             <th>#</th>
+            <th></th>
             <th>Фамилия</th>
             <th>Имя</th>
             <th>Отчество</th>
@@ -22,6 +23,7 @@
         @foreach($contacts as $key => $contact)
             <tr>
                 <th>{{ $key + 1  }}</th>
+                <td><img class="contact__table-img" src="{{ asset('storage/' . $contact->avatar) }}"></td>
                 <td><a href="/contact/{{ $contact->id }}">{{ $contact->last_name }}</a></td>
                 <td>{{ $contact->first_name }}</td>
                 <td>{{ $contact->patronymic }}</td>

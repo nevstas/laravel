@@ -12,6 +12,24 @@
     margin: 0 auto;
 }
 
-.contact__button-back {
+.contact__button-back--create {
     margin-left: 10px;
+}
+
+.contact__table-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact__img-container {
+    text-align: center;
+}
+
+.contact__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
 }
