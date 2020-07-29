@@ -1,18 +1,18 @@
 @extends('template')
-@section('title', 'Контакт "' . $contact->first_name . '"')
+@section('title', 'Контакт "' . $contact->format_name . '"')
 
 @section('content')
-    <h1 class="contacts__title">Контакт "{{ $contact->first_name }}"</h1>
+    <h1 class="contact__title">Контакт "{{ $contact->format_name }}"</h1>
 
-    <table class="table table-bordered contacts__table">
+    <table class="table table-bordered contact__table">
         <tbody>
-            <tr>
-                <td>Имя</td>
-                <td>{{ $contact->first_name }}</td>
-            </tr>
             <tr>
                 <td>Фамилия</td>
                 <td>{{ $contact->last_name }}</td>
+            </tr>
+            <tr>
+                <td>Имя</td>
+                <td>{{ $contact->first_name }}</td>
             </tr>
             <tr>
                 <td>Отчество</td>

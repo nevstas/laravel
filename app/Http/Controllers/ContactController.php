@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use App\Http\Requests\ContactRequest;
 
 use App\Contact;
 use App\Log;
@@ -16,13 +17,19 @@ class ContactController extends Controller
         return view('contacts', ['contacts' => $contacts]);
     }
 
-    public function contact($contact_id)
+    public function contact($contactID)
     {
 
-        Contact::find($contact_id)->update(['counter_view' => DB::raw('counter_view + 1')]);
-        Log::create(['contact_id' => $contact_id, 'status' => 'view']);
-        $contact = Contact::where('id', $contact_id)->get()->first();
+        Contact::find($contactID)->update(['counter_view' => DB::raw('counter_view + 1')]);
+        Log::create(['contact_id' => $contactID, 'status' => 'view']);
+        $contact = Contact::find($contactID)->get()->first();
 
         return view('contact', ['contact' => $contact]);
+    }
+
+    public function create(ContactRequest $request)
+    {
+        Contact::create($request->all());
+        return redirect('/');
     }
 }

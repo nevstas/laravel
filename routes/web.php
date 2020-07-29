@@ -12,5 +12,6 @@
 */
 
 Route::get('/', 'ContactController@index');
-
+Route::view('contact/add', 'contact_create');
+Route::post('contact/add', 'ContactController@create');
 Route::get('contact/{contact_id?}', 'ContactController@contact');
