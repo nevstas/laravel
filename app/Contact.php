@@ -17,6 +17,9 @@ class Contact extends Model
         'is_delete',
     ];
 
+    ////////////////////////
+    /// Гетеры
+    ////////////////////////
     protected function getFirstNameAttribute($value)
     {
         return $this->mb_ucfirst($value);
@@ -37,6 +40,29 @@ class Contact extends Model
         return $this->mb_ucfirst($this->last_name) . " " .
             $this->mb_ucfirst(mb_substr($this->first_name, 0, 1)) . ". " .
             $this->mb_ucfirst(mb_substr($this->patronymic, 0, 1)) . ".";
+    }
+
+    ////////////////////////
+    /// Сетеры
+    ////////////////////////
+    protected function setFirstNameAttribute($value)
+    {
+        $this->attributes['first_name'] = $this->mb_ucfirst($value);
+    }
+
+    protected function setLastNameAttribute($value)
+    {
+        $this->attributes['last_name'] = $this->mb_ucfirst($value);
+    }
+
+    protected function setPatronymicAttribute($value)
+    {
+        $this->attributes['patronymic'] = $this->mb_ucfirst($value);
+    }
+
+    protected function setPhoneAttribute($value)
+    {
+        $this->attributes['phone'] = preg_replace("/[^0-9]+/", "", $value);
     }
 
     /*

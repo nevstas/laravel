@@ -55,8 +55,8 @@
             </div>
             <div class="form-group row">
                 <div class="col-sm-12">
-                    <button type="submit" class="btn btn-success">Добавить</button>
-                    <a class="btn btn-primary contact__button-back--create" href="/" role="button">Назад</a>
+                    <button type="submit" class="btn btn-success button">Добавить</button>
+                    <a class="btn btn-primary button--additional" href="{{ route('contacts.index') }}" role="button">Назад</a>
                 </div>
             </div>
         </form>

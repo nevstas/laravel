@@ -24,7 +24,7 @@
             </tr>
             <tr>
                 <td>Телефон</td>
-                <td>{{ $contact->phone }}</td>
+                <td><a href="tel:{{ $contact->phone }}">{{ $contact->phone }}</a></td>
             </tr>
             <tr>
                 <td>Адрес</td>
@@ -37,5 +37,5 @@
         </tbody>
     </table>
 
-    <a class="btn btn-primary contact__button-back" href="/" role="button">Назад</a>
+    <a class="btn btn-primary button" href="{{ route('contacts.index')  }}" role="button">Назад</a>
 @endsection

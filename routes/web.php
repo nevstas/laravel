@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'ContactController@index');
-Route::view('contact/add', 'contact_create');
-Route::post('contact/add', 'ContactController@create');
-Route::get('contact/{contact_id?}', 'ContactController@contact');
+Route::get('/', 'ContactController@index')->name('contacts.index');
+Route::view('contact/create', 'contact_create')->name('contacts.create');
+Route::post('contact/create', 'ContactController@create')->name('contacts.save');
+Route::get('contact/{contact_id}', 'ContactController@contact')->name('contacts.show');
