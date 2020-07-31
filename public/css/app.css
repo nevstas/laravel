@@ -10966,3 +10966,7 @@ a.text-dark:focus {
      object-fit: cover;
 }
 
+.contact__log-content {
+  margin-top: 10px;
+}
+

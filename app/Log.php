@@ -10,4 +10,16 @@ class Log extends Model
         'contact_id',
         'status',
     ];
+
+    protected $statuses = [
+        'view' => 'Просмотрено',
+    ];
+
+    ////////////////////////
+    /// Гетеры
+    ////////////////////////
+    protected function getStatusHumanAttribute()
+    {
+        return $this->statuses[$this->status] ?? '';
+    }
 }

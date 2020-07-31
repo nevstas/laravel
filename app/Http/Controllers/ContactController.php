@@ -14,18 +14,25 @@ class ContactController extends Controller
 {
     public function index()
     {
-        $contacts = Contact::get();
+        $contacts = Contact::with(['logsLimit' => function ($query) {
+            $query->orderBy('created_at', 'desc');
+        }])->get();
+
         return view('contacts', ['contacts' => $contacts]);
     }
 
     public function contact($contactID)
     {
 
-        Contact::find($contactID)->update(['counter_view' => DB::raw('counter_view + 1')]);
-        Log::create(['contact_id' => $contactID, 'status' => 'view']);
         $contact = Contact::find($contactID);
+        $contact->increment('counter_view');
+        Log::create(['contact_id' => $contactID, 'status' => 'view']);
+        $logs = $contact->logs()->orderBy('created_at', 'desc')->get();
 
-        return view('contact', ['contact' => $contact]);
+        return view('contact', [
+            'contact' => $contact,
+            'logs' => $logs,
+        ]);
     }
 
     public function create(ContactRequest $request)
@@ -34,6 +41,6 @@ class ContactController extends Controller
         $contact = $request->all();
         $contact['avatar'] = $request->file('avatar')->store('avatar');
         Contact::create($contact);
-        return redirect('/');
+        return redirect()->route('contacts.index');
     }
 }

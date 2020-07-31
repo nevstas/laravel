@@ -17,6 +17,7 @@
             <th>Телефон</th>
             <th>Адрес</th>
             <th>Просмотров</th>
+            <th>Логи</th>
         </tr>
         </thead>
         <tbody>
@@ -30,6 +31,19 @@
                 <td><a href="tel:{{ $contact->phone }}">{{ $contact->phone }}</a></td>
                 <td>{{ $contact->address }}</td>
                 <td>{{ $contact->counter_view }}</td>
+                <td>
+
+                    <button class="btn btn-primary contact__log-button" type="button" data-toggle="collapse" data-target="#contact__log-content_{{ $key }}" aria-expanded="false" aria-controls="collapseExample">
+                        Показать
+                    </button>
+
+                    <div class="collapse contact__log-content" id="contact__log-content_{{ $key }}">
+                        <div class="card card-body">
+                            {{ $contact->logsLimit }}
+                        </div>
+                    </div>
+
+                </td>
             </tr>
         @endforeach
 

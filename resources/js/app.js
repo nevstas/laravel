@@ -4,7 +4,8 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+require('bootstrap');
+require('jquery');
 
 //window.Vue = require('vue');
 
@@ -29,4 +30,9 @@ require('./bootstrap');
 
 // const app = new Vue({
 //     el: '#app',
+// });
+
+
+// $('.contact__log-button').click(function() {
+//     $(this).siblings('.contact__log-content').show();
 // });

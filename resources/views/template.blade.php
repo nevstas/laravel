@@ -15,5 +15,6 @@
         @yield('content')
     </div>
 
+    <script src="{{ URL::asset('js/app.js') }}"></script>
     </body>
 </html>

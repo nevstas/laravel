@@ -75,4 +75,14 @@ class Contact extends Model
         $then = mb_substr($string, 1, $strlen - 1, $encoding);
         return mb_strtoupper($firstChar, $encoding) . $then;
     }
+
+    public function logs()
+    {
+        return $this->hasMany('App\Log');
+    }
+
+    public function logsLimit()
+    {
+        return $this->hasMany('App\Log')->limit(10);
+    }
 }
