@@ -28,11 +28,8 @@ class ContactController extends Controller
         $contact->increment('counter_view');
         Log::create(['contact_id' => $contactID, 'status' => 'view']);
 
-        $logs = $contact->logs()->orderBy('created_at', 'desc')->get();
-
         return view('contact', [
             'contact' => $contact,
-            'logs' => $logs,
         ]);
     }
 

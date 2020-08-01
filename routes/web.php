@@ -15,3 +15,4 @@ Route::get('/', 'ContactController@index')->name('contacts.index');
 Route::view('contact/create', 'contact_create')->name('contacts.create');
 Route::post('contact/create', 'ContactController@create')->name('contacts.save');
 Route::get('contact/{contact_id}', 'ContactController@contact')->name('contacts.show');
+Route::get('contact/{contact_id}/logs', 'LogController@logs')->name('logs.index');
