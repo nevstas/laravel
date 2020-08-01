@@ -14,7 +14,7 @@ class ContactController extends Controller
 {
     public function index()
     {
-        $contacts = Contact::with(['logsLimit' => function ($query) {
+        $contacts = Contact::with(['logs' => function ($query) {
             $query->orderBy('created_at', 'desc');
         }])->get();
 
@@ -24,9 +24,10 @@ class ContactController extends Controller
     public function contact($contactID)
     {
 
-        $contact = Contact::find($contactID);
+        $contact = Contact::findOrFail($contactID);
         $contact->increment('counter_view');
         Log::create(['contact_id' => $contactID, 'status' => 'view']);
+
         $logs = $contact->logs()->orderBy('created_at', 'desc')->get();
 
         return view('contact', [

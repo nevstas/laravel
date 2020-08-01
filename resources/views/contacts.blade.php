@@ -33,15 +33,31 @@
                 <td>{{ $contact->counter_view }}</td>
                 <td>
 
-                    <button class="btn btn-primary contact__log-button" type="button" data-toggle="collapse" data-target="#contact__log-content_{{ $key }}" aria-expanded="false" aria-controls="collapseExample">
-                        Показать
-                    </button>
 
-                    <div class="collapse contact__log-content" id="contact__log-content_{{ $key }}">
-                        <div class="card card-body">
-                            {{ $contact->logsLimit }}
+                    @if (!$contact->logs->isEmpty())
+                        <button class="btn btn-primary contact__log-button" type="button" data-toggle="collapse" data-target="#contact__log-content_{{ $key }}" aria-expanded="false" aria-controls="collapseExample">
+                            Показать
+                        </button>
+
+                        <div class="collapse contact__log-content" id="contact__log-content_{{ $key }}">
+                            <div class="card card-body">
+
+                                @foreach($contact->logs as $key_log => $log)
+                                    @if ($key_log > 9)
+                                        @break
+                                    @endif
+
+                                    <div class="contact__log-item">
+                                        <div class="contact__log-value">{{ $key_log + 1  }}</div>
+                                        <div class="contact__log-value">{{ $log->status_human  }}</div>
+                                        <div class="contact__log-value">{{ \Carbon\Carbon::parse($log->created_at)->format('d.m.Y H:i:s')}}</div>
+                                    </div>
+                                @endforeach
+
+                            </div>
                         </div>
-                    </div>
+                    @endif
+
 
                 </td>
             </tr>

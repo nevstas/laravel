@@ -80,9 +80,4 @@ class Contact extends Model
     {
         return $this->hasMany('App\Log');
     }
-
-    public function logsLimit()
-    {
-        return $this->hasMany('App\Log')->limit(10);
-    }
 }
