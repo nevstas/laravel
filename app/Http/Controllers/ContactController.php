@@ -46,7 +46,8 @@ class ContactController extends Controller
     {
         $contact = $request->all();
         $contact['avatar'] = $request->file('avatar')->store('avatar');
-        Contact::create($contact);
+        $create = Contact::create($contact);
+        Log::create(['contact_id' => $create->id, 'status' => 'create']);
         return redirect()->route('contacts.index');
     }
 
@@ -101,6 +102,7 @@ class ContactController extends Controller
             $contact['avatar'] = $request->file('avatar')->store('avatar');
         }
         $contact->save();
+        Log::create(['contact_id' => $id, 'status' => 'update']);
         return redirect()->route('contacts.index');
     }
 
