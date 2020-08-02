@@ -1,15 +1,15 @@
 @extends('template')
-@section('title', 'Логи для контакта "' . $contact->format_name . '"')
+@section('title', __('logs.logs_ext', ['name' => $contact->format_name]))
 
 @section('content')
-    <h1 class="contact__title">Логи для контакта "{{ $contact->format_name }}"</h1>
+    <h1 class="contact__title">@lang('logs.logs_ext', ['name' => $contact->format_name])</h1>
 
     <table class="table table-bordered contact__logs">
         <thead>
         <tr>
             <th>#</th>
-            <th>Действие</th>
-            <th>Дата</th>
+            <th>@lang('general.action')</th>
+            <th>@lang('general.date')</th>
         </tr>
         </thead>
         <tbody>
@@ -23,5 +23,5 @@
         </tbody>
     </table>
 
-    <a class="btn btn-primary button" href="{{ route('contacts.index')  }}" role="button">Назад к контактам</a>
+    <a class="btn btn-primary button" href="{{ route('contacts.index')  }}" role="button">@lang('general.back')</a>
 @endsection

@@ -11,15 +11,11 @@ class Log extends Model
         'status',
     ];
 
-    protected $statuses = [
-        'view' => 'Просмотрено',
-    ];
-
     ////////////////////////
     /// Гетеры
     ////////////////////////
     protected function getStatusHumanAttribute()
     {
-        return $this->statuses[$this->status] ?? '';
+        return __('logs.status_' . $this->status);
     }
 }

@@ -10978,3 +10978,7 @@ a.text-dark:focus {
   margin-bottom: 20px;
 }
 
+.container .navbar {
+  margin-top: 20px;
+}
+

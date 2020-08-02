@@ -1,23 +1,23 @@
 @extends('template')
-@section('title', 'Телефонный справочник')
+@section('title', __('contacts.phonebook'))
 
 @section('content')
-    <h1 class="contact__title">Телефонный справочник</h1>
+    <h1 class="contact__title">@lang('contacts.phonebook')</h1>
 
-    <a class="btn btn-success button" href="{{ route('contacts.create') }}" role="button">Добавить</a>
+    <a class="btn btn-success button" href="{{ route('contacts.create') }}" role="button">@lang('contacts.new_contact')</a>
 
     <table class="table table-bordered contact__table">
         <thead>
         <tr>
             <th>#</th>
             <th></th>
-            <th>Фамилия</th>
-            <th>Имя</th>
-            <th>Отчество</th>
-            <th>Телефон</th>
-            <th>Адрес</th>
-            <th>Просмотров</th>
-            <th>Логи</th>
+            <th>@lang('contacts.lastname')</th>
+            <th>@lang('contacts.firstname')</th>
+            <th>@lang('contacts.patronymic')</th>
+            <th>@lang('contacts.phone')</th>
+            <th>@lang('contacts.address')</th>
+            <th>@lang('contacts.views')</th>
+            <th>@lang('logs.logs')</th>
         </tr>
         </thead>
         <tbody>
@@ -33,7 +33,7 @@
                 <td>{{ $contact->counter_view }}</td>
                 <td>
                     @if (!$contact->logs->isEmpty())
-                        <a class="btn btn-primary button" href="{{ route('logs.index', $contact->id) }}" role="button">Логи</a>
+                        <a class="btn btn-primary button" href="{{ route('logs.index', $contact->id) }}" role="button">@lang('logs.logs')</a>
                     @endif
                 </td>
             </tr>
