@@ -5,7 +5,7 @@ return [
     'contact_ext' => 'Контакт ":name"',
     'phonebook' => 'Телефонный справочник',
     'new_contact' => 'Добавить контакт',
-    'edit_contact' => 'Редктирование контакта :name',
+    'edit_contact' => 'Редктирование контакта ":name"',
     'firstname' => 'Имя',
     'lastname' => 'Фамилия',
     'patronymic' => 'Отчество',

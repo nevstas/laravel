@@ -5,7 +5,7 @@ return [
     'contact_ext' => 'Contact ":name"',
     'phonebook' => 'Phone Book',
     'new_contact' => 'New contact',
-    'edit_contact' => 'Edit contact :name',
+    'edit_contact' => 'Edit contact ":name"',
     'firstname' => 'Firstname',
     'lastname' => 'Lastname',
     'patronymic' => 'Patronymic',
