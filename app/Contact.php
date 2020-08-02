@@ -63,7 +63,7 @@ class Contact extends Model
 
     protected function setPhoneAttribute($value)
     {
-        $this->attributes['phone'] = preg_replace("/[^0-9]+/", "", $value);
+        $this->attributes['phone'] = preg_replace("/[^0-9\+]+/", "", $value);
     }
 
     public function logs()
