@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactRequest;
+use App\Http\Requests\ContactEditRequest;
 use Illuminate\Http\Request;
 use App\Contact;
 use App\Log;
@@ -88,7 +89,7 @@ class ContactController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(ContactRequest $request, $id)
+    public function update(ContactEditRequest $request, $id)
     {
         $contact = Contact::find($id);
         $contact->first_name = $request->first_name;
@@ -96,7 +97,9 @@ class ContactController extends Controller
         $contact->patronymic = $request->patronymic;
         $contact->phone = $request->phone;
         $contact->address = $request->address;
-        $contact['avatar'] = $request->file('avatar')->store('avatar');
+        if ($request->file('avatar')) {
+            $contact['avatar'] = $request->file('avatar')->store('avatar');
+        }
         $contact->save();
         return redirect()->route('contacts.index');
     }
