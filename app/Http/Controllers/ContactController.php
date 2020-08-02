@@ -14,9 +14,7 @@ class ContactController extends Controller
 {
     public function index()
     {
-        $contacts = Contact::with(['logs' => function ($query) {
-            $query->orderBy('created_at', 'desc');
-        }])->get();
+        $contacts = Contact::paginate(10);
 
         return view('contacts', ['contacts' => $contacts]);
     }

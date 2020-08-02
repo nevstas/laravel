@@ -54,5 +54,225 @@ class ContactsSeeder extends Seeder
             'created_at' => DB::raw('NOW()'),
             'updated_at' => DB::raw('NOW()'),
         ]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        DB::table('contacts')->insert([
+            'first_name' => 'Алексей',
+            'last_name' => 'Белоусов',
+            'patronymic' => 'Сергеевич',
+            'phone' => '+375339457354',
+            'address' => 'Бобруйск, ул. Минская 36-47',
+            'avatar' => 'avatar/no-image.jpg',
+            'created_at' => DB::raw('NOW()'),
+            'updated_at' => DB::raw('NOW()'),
+        ]);
+
+        DB::table('contacts')->insert([
+            'first_name' => 'Евгений',
+            'last_name' => 'Суворов',
+            'patronymic' => 'Михайлович',
+            'phone' => '+375339574354',
+            'address' => 'Бобруйск, Ул. Гагарина 25-59',
+            'avatar' => 'avatar/no-image.jpg',
+            'created_at' => DB::raw('NOW()'),
+            'updated_at' => DB::raw('NOW()'),
+        ]);
+
+        DB::table('contacts')->insert([
+            'first_name' => 'Александр',
+            'last_name' => 'Крюков',
+            'patronymic' => 'Сергеевич',
+            'phone' => '+375339876385',
+            'address' => 'Бобруйск, ул. Батова 48-46',
+            'avatar' => 'avatar/no-image.jpg',
+            'created_at' => DB::raw('NOW()'),
+            'updated_at' => DB::raw('NOW()'),
+        ]);
+
+        DB::table('contacts')->insert([
+            'first_name' => 'Федор',
+            'last_name' => 'Белозёров',
+            'patronymic' => 'Викторович',
+            'phone' => '+375339583142',
+            'address' => 'Бобруйск, пр-т. Приберезинский 35-25',
+            'avatar' => 'avatar/no-image.jpg',
+            'created_at' => DB::raw('NOW()'),
+            'updated_at' => DB::raw('NOW()'),
+        ]);
+
+        DB::table('contacts')->insert([
+            'first_name' => 'Михаил',
+            'last_name' => 'Никифоров',
+            'patronymic' => 'Петрович',
+            'phone' => '+375339869436',
+            'address' => 'Бобруйск, пр-т. Георгиевский 15-36',
+            'avatar' => 'avatar/no-image.jpg',
+            'created_at' => DB::raw('NOW()'),
+            'updated_at' => DB::raw('NOW()'),
+        ]);
+
+        DB::table('contacts')->insert([
+            'first_name' => 'Виталий',
+            'last_name' => 'Гусев',
+            'patronymic' => 'Игоревич',
+            'phone' => '+375339473524',
+            'address' => 'Бобруйск, пр-т. Строителей 63-74',
+            'avatar' => 'avatar/no-image.jpg',
+            'created_at' => DB::raw('NOW()'),
+            'updated_at' => DB::raw('NOW()'),
+        ]);
+
+        DB::table('contacts')->insert([
+            'first_name' => 'Михаил',
+            'last_name' => 'Яковлев',
+            'patronymic' => 'Алексеев',
+            'phone' => '+375339684364',
+            'address' => 'Бобруйск, ул. Пушкина 74-35',
+            'avatar' => 'avatar/no-image.jpg',
+            'created_at' => DB::raw('NOW()'),
+            'updated_at' => DB::raw('NOW()'),
+        ]);
+
+        DB::table('contacts')->insert([
+            'first_name' => 'Михаил',
+            'last_name' => 'Степанов',
+            'patronymic' => 'Михайлович',
+            'phone' => '+375339573265',
+            'address' => 'Бобруйск, ул. Интернациональная 25-74',
+            'avatar' => 'avatar/no-image.jpg',
+            'created_at' => DB::raw('NOW()'),
+            'updated_at' => DB::raw('NOW()'),
+        ]);
+
+        DB::table('contacts')->insert([
+            'first_name' => 'Николай',
+            'last_name' => 'Куликов',
+            'patronymic' => 'Александрович',
+            'phone' => '+375339589354',
+            'address' => 'Бобруйск, ул. Крылова 85-36',
+            'avatar' => 'avatar/no-image.jpg',
+            'created_at' => DB::raw('NOW()'),
+            'updated_at' => DB::raw('NOW()'),
+        ]);
+
+        DB::table('contacts')->insert([
+            'first_name' => 'Станислав',
+            'last_name' => 'Ильин',
+            'patronymic' => 'Петрович',
+            'phone' => '+375339367435',
+            'address' => 'Бобруйск, ул. Сикорского 63-25',
+            'avatar' => 'avatar/no-image.jpg',
+            'created_at' => DB::raw('NOW()'),
+            'updated_at' => DB::raw('NOW()'),
+        ]);
+
+        DB::table('contacts')->insert([
+            'first_name' => 'Арсений',
+            'last_name' => 'Веселов',
+            'patronymic' => 'Станиславович',
+            'phone' => '+375339573543',
+            'address' => 'Бобруйск, ул. Рокоссовского 14-74',
+            'avatar' => 'avatar/no-image.jpg',
+            'created_at' => DB::raw('NOW()'),
+            'updated_at' => DB::raw('NOW()'),
+        ]);
+
+        DB::table('contacts')->insert([
+            'first_name' => 'Роман',
+            'last_name' => 'Чернов',
+            'patronymic' => 'Сергеевич',
+            'phone' => '+375339473365',
+            'address' => 'Бобруйск, ул. Советская 47-36',
+            'avatar' => 'avatar/no-image.jpg',
+            'created_at' => DB::raw('NOW()'),
+            'updated_at' => DB::raw('NOW()'),
+        ]);
+
+        DB::table('contacts')->insert([
+            'first_name' => 'Алексей',
+            'last_name' => 'Копылов',
+            'patronymic' => 'Дмитриевич',
+            'phone' => '+375339573654',
+            'address' => 'Бобруйск, ул. Комарова 25-67',
+            'avatar' => 'avatar/no-image.jpg',
+            'created_at' => DB::raw('NOW()'),
+            'updated_at' => DB::raw('NOW()'),
+        ]);
+
+        DB::table('contacts')->insert([
+            'first_name' => 'Виталий',
+            'last_name' => 'Овчинников',
+            'patronymic' => 'Николаевич',
+            'phone' => '+375339798323',
+            'address' => 'Бобруйск, ул. Минская 47-63',
+            'avatar' => 'avatar/no-image.jpg',
+            'created_at' => DB::raw('NOW()'),
+            'updated_at' => DB::raw('NOW()'),
+        ]);
+
+        DB::table('contacts')->insert([
+            'first_name' => 'Дмитрий',
+            'last_name' => 'Филатов',
+            'patronymic' => 'Петрович',
+            'phone' => '+375339437368',
+            'address' => 'Бобруйск, пр-т. Строителей 25-14',
+            'avatar' => 'avatar/no-image.jpg',
+            'created_at' => DB::raw('NOW()'),
+            'updated_at' => DB::raw('NOW()'),
+        ]);
+
+        DB::table('contacts')->insert([
+            'first_name' => 'Николай',
+            'last_name' => 'Горшков',
+            'patronymic' => 'Владимирович',
+            'phone' => '+375339879045',
+            'address' => 'Бобруйск, пр-т. Георгиевский 25-58',
+            'avatar' => 'avatar/no-image.jpg',
+            'created_at' => DB::raw('NOW()'),
+            'updated_at' => DB::raw('NOW()'),
+        ]);
+
+        DB::table('contacts')->insert([
+            'first_name' => 'Станислав',
+            'last_name' => 'Жданов',
+            'patronymic' => 'Сергеевич',
+            'phone' => '+375339451680',
+            'address' => 'Бобруйск, ул. Ленина 69-70',
+            'avatar' => 'avatar/no-image.jpg',
+            'created_at' => DB::raw('NOW()'),
+            'updated_at' => DB::raw('NOW()'),
+        ]);
+
+        DB::table('contacts')->insert([
+            'first_name' => 'Евгений',
+            'last_name' => 'Гришин',
+            'patronymic' => 'Петрович',
+            'phone' => '+375339463765',
+            'address' => 'Бобруйск, пр-т. Приберезинский 47-63',
+            'avatar' => 'avatar/no-image.jpg',
+            'created_at' => DB::raw('NOW()'),
+            'updated_at' => DB::raw('NOW()'),
+        ]);
     }
 }

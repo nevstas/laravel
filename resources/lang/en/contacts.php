@@ -18,4 +18,5 @@ return [
     'views' => 'Views',
     'avatar' => 'Avatar',
     'about_text' => 'This is my first project on framework Laravel',
+    'nothing' => 'Nothing found',
 ];

@@ -10982,3 +10982,8 @@ a.text-dark:focus {
   margin-top: 20px;
 }
 
+.alert {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+

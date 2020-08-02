@@ -13,7 +13,7 @@ class LogController extends Controller
     {
 
         $contact = Contact::findOrFail($contactID);
-        $logs = Log::where('contact_id', $contactID)->orderBy('created_at', 'desc')->get();
+        $logs = Log::where('contact_id', $contactID)->orderBy('created_at', 'desc')->paginate(10);
 
         return view('logs', [
             'contact' => $contact,
