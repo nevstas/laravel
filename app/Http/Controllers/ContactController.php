@@ -15,8 +15,12 @@ class ContactController extends Controller
     public function index()
     {
         $contacts = Contact::paginate(10);
+        $start = $contacts->firstItem();
 
-        return view('contacts', ['contacts' => $contacts]);
+        return view('contacts', [
+            'contacts' => $contacts,
+            'start' => $start,
+        ]);
     }
 
     public function contact($contactID)

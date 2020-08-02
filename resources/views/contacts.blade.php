@@ -24,7 +24,7 @@
             <tbody>
             @foreach($contacts as $key => $contact)
                 <tr>
-                    <th>{{ $key + 1  }}</th>
+                    <th>{{ $start + $key }}</th>
                     <td><img class="contact__table-img" src="{{ asset('storage/' . $contact->avatar) }}"></td>
                     <td><a href="{{ route('contacts.show', $contact->id) }}">{{ $contact->last_name }}</a></td>
                     <td>{{ $contact->first_name }}</td>

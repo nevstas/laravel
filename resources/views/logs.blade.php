@@ -16,7 +16,7 @@
             <tbody>
             @foreach($logs as $key => $log)
                 <tr>
-                    <th>{{ $key + 1  }}</th>
+                    <th>{{ $start + $key }}</th>
                     <td>{{ $log->status_human }}</td>
                     <td>{{ \Carbon\Carbon::parse($log->created_at)->format('d.m.Y H:i:s')}}</td>
                 </tr>
