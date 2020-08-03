@@ -126,6 +126,8 @@ class MemberContactController extends Controller
      */
     public function destroy($id)
     {
-        dump("destroy");
+        $contact = Contact::find($id);
+        $contact->delete();
+        return redirect()->route('member.contacts.index');
     }
 }

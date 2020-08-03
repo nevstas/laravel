@@ -23,7 +23,6 @@ return [
     'status' => 'Status',
     'status_public' => 'Public',
     'status_private' => 'Private',
-
     'first_name_required' => 'Firstname is required',
     'first_name_max' => 'Firstname is too long (maximum is :max characters)',
     'last_name_required' => 'Lastname is required',
@@ -38,4 +37,9 @@ return [
     'avatar_image' => 'Avatar - Please upload only Image',
     'avatar_max' => 'Avatar - Uploaded file was too big (max filesize :max kb)',
     'status_required' => 'Status is required',
+    'delete' => 'Delete',
+    'are_you_sure' => 'Are you sure?',
+    'you_wont_be_able_to_revert_this' => 'You won\'t be able to revert this',
+    'yes_delete_it' => 'Yes, delete it!',
+    'no_cancel' => 'No, cancel!',
 ];

@@ -4,8 +4,9 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('bootstrap');
-require('jquery');
+require('./bootstrap');
+// require('jquery');
+// require('sweetalert2');
 
 //window.Vue = require('vue');
 
@@ -32,7 +33,23 @@ require('jquery');
 //     el: '#app',
 // });
 
+//Swal.fire('Any fool can use a computer');
 
-// $('.contact__log-button').click(function() {
-//     $(this).siblings('.contact__log-content').show();
-// });
+$('.contact__btn-remove').click(function(){
+    event.preventDefault();
+    Swal.fire({
+        title: translations.contacts.are_you_sure,
+        text: translations.contacts.you_wont_be_able_to_revert_this,
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: translations.contacts.yes_delete_it,
+        cancelButtonText: translations.contacts.no_cancel,
+    }).then((result) => {
+        if (result.value) {
+            document.querySelector('.contact__form-remove').submit();
+        }
+    })
+
+});

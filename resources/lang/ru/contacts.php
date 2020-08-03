@@ -23,7 +23,6 @@ return [
     'status' => 'Статус',
     'status_public' => 'Публичный',
     'status_private' => 'Приватный',
-
     'first_name_required' => 'Заполните имя',
     'first_name_max' => 'Имя не должно превышать :max символов',
     'last_name_required' => 'Заполните фамилию',
@@ -38,4 +37,9 @@ return [
     'avatar_image' => 'Загружаемый файл аватара не является картинкой',
     'avatar_max' => 'Максимальный размер аватара должен быть не более :max кб',
     'status_required' => 'Выберите статус',
+    'delete' => 'Удалить',
+    'are_you_sure' => 'Вы уверены?',
+    'you_wont_be_able_to_revert_this' => 'Вы не сможете отменить это',
+    'yes_delete_it' => 'Да, удалить!',
+    'no_cancel' => 'Нет!',
 ];
