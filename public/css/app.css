@@ -10942,10 +10942,6 @@ a.text-dark:focus {
   margin: 0 auto;
 }
 
-.button--additional {
-  margin-left: 10px;
-}
-
 .contact__table-img {
   width: 30px;
   height: 30px;
@@ -10974,6 +10970,30 @@ a.text-dark:focus {
   margin-bottom: 10px;
 }
 
+.profile__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.profile__create-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile__img-container {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.profile__img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .container {
   margin-bottom: 20px;
 }
@@ -10982,8 +11002,20 @@ a.text-dark:focus {
   margin-top: 20px;
 }
 
+.nav-item__avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .alert {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.button--additional {
+  margin-left: 10px;
 }
 

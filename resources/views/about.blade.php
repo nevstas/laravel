@@ -6,4 +6,7 @@
     <p>
         @lang('about.about_text')
     </p>
+    <p>
+        Gitlab <a target="_blank" href="https://gitlab.com/nevstas/laravel">https://gitlab.com/nevstas/laravel</a>
+    </p>
 @endsection

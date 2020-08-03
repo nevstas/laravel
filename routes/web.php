@@ -22,7 +22,9 @@ Route::group(['middleware' => 'language'],function ()
     Auth::routes();
     Route::group(['middleware' => 'auth'],function ()
     {
-        Route::view('/profile', 'profile')->name('profile');
+        Route::get('/profile', 'UserController@edit')->name('profile.edit');
+        Route::put('/profile', 'UserController@update')->name('profile.update');
+
         Route::resource('member/contacts', 'MemberContactController', ['names' => 'member.contacts']);
         Route::get('member', 'MemberContactController@index')->name('member.contacts.index');
     });

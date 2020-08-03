@@ -2,10 +2,15 @@
 
 @import "variables";
 @import "contact";
+@import "profile";
 @import "template";
 
 
 .alert {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.button--additional {
+    margin-left: 10px;
 }

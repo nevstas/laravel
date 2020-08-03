@@ -50,11 +50,12 @@
                         <li class="nav-item dropdown">
 
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <img class="nav-item__avatar" src="{{ asset('storage/' . (Auth::user()->avatar ? Auth::user()->avatar : 'users_avatar/no-image.jpg')) }}">
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ route('profile') }}">@lang('general.profile')</a>
+                                <a class="dropdown-item" href="{{ route('profile.edit') }}">@lang('user.profile')</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

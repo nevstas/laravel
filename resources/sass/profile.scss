@@ -1,0 +1,22 @@
+.profile__title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile__create-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.profile__img-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}

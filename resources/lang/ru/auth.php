@@ -11,4 +11,5 @@ return [
     'send_password_reset_link' => 'Отправить ссылку на Email',
     'remember_me' => 'Запомнить меня',
     'forgot_your_password' => 'Забыли пароль?',
+    'failed' => 'Не верный логин или пароль',
 ];
