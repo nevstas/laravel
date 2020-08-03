@@ -29,7 +29,7 @@ class ContactRequest extends FormRequest
             'patronymic' => 'required|max:255',
             'phone' => 'required|max:255',
             'address' => 'required|max:255',
-            'avatar' => 'required',
+            'avatar' => 'required|image|max:100000',
         ];
     }
 
@@ -37,17 +37,23 @@ class ContactRequest extends FormRequest
     {
         return [
             'first_name.required' => 'Заполните имя',
-            'last_name.required' => 'Заполните фамилию',
-            'patronymic.required' => 'Заполните отчество',
-            'phone.required' => 'Заполните телефон',
-            'address.required' => 'Заполните адрес',
-            'avatar.required' => 'Загрузите аватар',
-
             'first_name.max' => 'Имя не должно превышать 255 символов',
+
+            'last_name.required' => 'Заполните фамилию',
             'last_name.max' => 'Фамилия не должна превышать 255 символов',
+
+            'patronymic.required' => 'Заполните отчество',
             'patronymic.max' => 'Отчество не должно превышать 255 символов',
+
+            'phone.required' => 'Заполните телефон',
             'phone.max' => 'Телефон не должен превышать 255 символов',
+
+            'address.required' => 'Заполните адрес',
             'address.max' => 'Адрес не должен превышать 255 символов',
+
+            'avatar.required' => 'Загрузите аватар',
+            'avatar.image' => 'Загружаемый файл аватара не является картинкой',
+            'avatar.max' => 'Максимальный размер аватара должен быть не более 100 Мб',
         ];
     }
 }

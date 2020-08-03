@@ -25,7 +25,7 @@ class ContactEditRequest extends ContactRequest
     public function rules()
     {
         $rules = parent::rules();
-        unset($rules['avatar']);
+        $rules['avatar'] = 'image|max:100000';
         return $rules;
     }
 }
