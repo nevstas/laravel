@@ -7,5 +7,4 @@ return [
     'back' => 'Back',
     'action' => 'Action',
     'date' => 'Date',
-
 ];

@@ -29,31 +29,31 @@ class ContactRequest extends FormRequest
             'patronymic' => 'required|max:255',
             'phone' => 'required|max:255',
             'address' => 'required|max:255',
-            'avatar' => 'required|image|max:100000',
+            'avatar' => 'required|image|max:1',
         ];
     }
 
     public function messages()
     {
         return [
-            'first_name.required' => 'Заполните имя',
-            'first_name.max' => 'Имя не должно превышать 255 символов',
+            'first_name.required' => __('contacts.first_name_required'),
+            'first_name.max' => __('contacts.first_name_max'),
 
-            'last_name.required' => 'Заполните фамилию',
-            'last_name.max' => 'Фамилия не должна превышать 255 символов',
+            'last_name.required' => __('contacts.last_name_required'),
+            'last_name.max' => __('contacts.last_name_max'),
 
-            'patronymic.required' => 'Заполните отчество',
-            'patronymic.max' => 'Отчество не должно превышать 255 символов',
+            'patronymic.required' => __('contacts.patronymic_required'),
+            'patronymic.max' => __('contacts.patronymic_max'),
 
-            'phone.required' => 'Заполните телефон',
-            'phone.max' => 'Телефон не должен превышать 255 символов',
+            'phone.required' => __('contacts.phone_required'),
+            'phone.max' => __('contacts.phone_max'),
 
-            'address.required' => 'Заполните адрес',
-            'address.max' => 'Адрес не должен превышать 255 символов',
+            'address.required' => __('contacts.address_required'),
+            'address.max' => __('contacts.address_max'),
 
-            'avatar.required' => 'Загрузите аватар',
-            'avatar.image' => 'Загружаемый файл аватара не является картинкой',
-            'avatar.max' => 'Максимальный размер аватара должен быть не более 100 Мб',
+            'avatar.required' => __('contacts.avatar_required'),
+            'avatar.image' => __('contacts.avatar_image'),
+            'avatar.max' => __('contacts.avatar_max'),
         ];
     }
 }

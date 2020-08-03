@@ -17,8 +17,16 @@ Route::group(['middleware' => 'language'],function ()
     Route::get('/', 'ContactController@index')->name('contacts.index');
     Route::view('/about', 'contact_about')->name('contacts.about');
     Route::get('contacts/{contact_id}/logs', 'LogController@logs')->name('logs.index');
+    Auth::routes();
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::group(['middleware' => 'auth'],function ()
+    {
+        Route::view('/profile', 'profile')->name('profile');
+    });
+
 });
 
 
 
 Route::get('change_language/{language}', 'SystemController@changeLanguage')->name('system.change_language');
+

@@ -20,4 +20,18 @@ return [
     'avatar' => 'Avatar',
     'about_text' => 'This is my first project on framework Laravel',
     'nothing' => 'Nothing found',
+
+    'first_name_required' => 'Firstname is required',
+    'first_name_max' => 'Firstname is too long (maximum is :max characters)',
+    'last_name_required' => 'Lastname is required',
+    'last_name_max' => 'Lastname is too long (maximum is :max characters)',
+    'patronymic_required' => 'Patronymic is required',
+    'patronymic_max' => 'Patronymic is too long (maximum is :max characters)',
+    'phone_required' => 'Phone is required',
+    'phone_max' => 'Phone is too long (maximum is :max characters)',
+    'address_required' => 'Address is required',
+    'address_max' => 'Address is too long (maximum is :max characters)',
+    'avatar_required' => 'Avatar is required',
+    'avatar_image' => 'Avatar - Please upload only Image',
+    'avatar_max' => 'Avatar - Uploaded file was too big (max filesize :max kb)',
 ];

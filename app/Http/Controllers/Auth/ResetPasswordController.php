@@ -36,4 +36,8 @@ class ResetPasswordController extends Controller
     {
         $this->middleware('guest');
     }
+
+    protected function redirectTo() {
+        return route('contacts.index');
+    }
 }
