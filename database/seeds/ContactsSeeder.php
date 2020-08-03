@@ -12,6 +12,8 @@ class ContactsSeeder extends Seeder
     public function run()
     {
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Иван',
             'last_name' => 'Туров',
             'patronymic' => 'Викторович',
@@ -23,6 +25,8 @@ class ContactsSeeder extends Seeder
         ]);
 
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Андрей',
             'last_name' => 'Ноден',
             'patronymic' => 'Михайлович',
@@ -34,6 +38,8 @@ class ContactsSeeder extends Seeder
         ]);
 
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Сергей',
             'last_name' => 'Аксенов',
             'patronymic' => 'Андреевич',
@@ -45,6 +51,8 @@ class ContactsSeeder extends Seeder
         ]);
 
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Дима',
             'last_name' => 'Томин',
             'patronymic' => 'Олегович',
@@ -54,30 +62,9 @@ class ContactsSeeder extends Seeder
             'created_at' => DB::raw('NOW()'),
             'updated_at' => DB::raw('NOW()'),
         ]);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Алексей',
             'last_name' => 'Белоусов',
             'patronymic' => 'Сергеевич',
@@ -89,6 +76,8 @@ class ContactsSeeder extends Seeder
         ]);
 
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Евгений',
             'last_name' => 'Суворов',
             'patronymic' => 'Михайлович',
@@ -100,6 +89,8 @@ class ContactsSeeder extends Seeder
         ]);
 
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Александр',
             'last_name' => 'Крюков',
             'patronymic' => 'Сергеевич',
@@ -111,6 +102,8 @@ class ContactsSeeder extends Seeder
         ]);
 
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Федор',
             'last_name' => 'Белозёров',
             'patronymic' => 'Викторович',
@@ -122,6 +115,8 @@ class ContactsSeeder extends Seeder
         ]);
 
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Михаил',
             'last_name' => 'Никифоров',
             'patronymic' => 'Петрович',
@@ -133,6 +128,8 @@ class ContactsSeeder extends Seeder
         ]);
 
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Виталий',
             'last_name' => 'Гусев',
             'patronymic' => 'Игоревич',
@@ -144,6 +141,8 @@ class ContactsSeeder extends Seeder
         ]);
 
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Михаил',
             'last_name' => 'Яковлев',
             'patronymic' => 'Алексеев',
@@ -155,6 +154,8 @@ class ContactsSeeder extends Seeder
         ]);
 
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Михаил',
             'last_name' => 'Степанов',
             'patronymic' => 'Михайлович',
@@ -166,6 +167,8 @@ class ContactsSeeder extends Seeder
         ]);
 
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Николай',
             'last_name' => 'Куликов',
             'patronymic' => 'Александрович',
@@ -177,6 +180,8 @@ class ContactsSeeder extends Seeder
         ]);
 
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Станислав',
             'last_name' => 'Ильин',
             'patronymic' => 'Петрович',
@@ -188,6 +193,8 @@ class ContactsSeeder extends Seeder
         ]);
 
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Арсений',
             'last_name' => 'Веселов',
             'patronymic' => 'Станиславович',
@@ -199,6 +206,8 @@ class ContactsSeeder extends Seeder
         ]);
 
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Роман',
             'last_name' => 'Чернов',
             'patronymic' => 'Сергеевич',
@@ -210,6 +219,8 @@ class ContactsSeeder extends Seeder
         ]);
 
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Алексей',
             'last_name' => 'Копылов',
             'patronymic' => 'Дмитриевич',
@@ -221,6 +232,8 @@ class ContactsSeeder extends Seeder
         ]);
 
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Виталий',
             'last_name' => 'Овчинников',
             'patronymic' => 'Николаевич',
@@ -232,6 +245,8 @@ class ContactsSeeder extends Seeder
         ]);
 
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Дмитрий',
             'last_name' => 'Филатов',
             'patronymic' => 'Петрович',
@@ -243,6 +258,8 @@ class ContactsSeeder extends Seeder
         ]);
 
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Николай',
             'last_name' => 'Горшков',
             'patronymic' => 'Владимирович',
@@ -254,6 +271,8 @@ class ContactsSeeder extends Seeder
         ]);
 
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Станислав',
             'last_name' => 'Жданов',
             'patronymic' => 'Сергеевич',
@@ -265,6 +284,8 @@ class ContactsSeeder extends Seeder
         ]);
 
         DB::table('contacts')->insert([
+            'user_id' => 1,
+            'status' => 'public',
             'first_name' => 'Евгений',
             'last_name' => 'Гришин',
             'patronymic' => 'Петрович',

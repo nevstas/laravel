@@ -20,7 +20,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('contacts.about') }}">@lang('top_menu.about')</a>
+                        <a class="nav-link" href="{{ route('about') }}">@lang('top_menu.about')</a>
                     </li>
                     @guest
                         <li class="nav-item">
@@ -28,6 +28,10 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('register') }}">@lang('auth.register')</a>
+                        </li>
+                    @else
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('member.contacts.index') }}">@lang('top_menu.mycontacts')</a>
                         </li>
                     @endguest
                 </ul>

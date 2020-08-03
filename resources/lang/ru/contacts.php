@@ -16,10 +16,13 @@ return [
     'your_patronymic' => 'Ваше отчество',
     'your_phone' => 'Ваш телефон',
     'your_address' => 'Ваш адрес',
-    'views' => 'Просомтров',
+    'views' => 'Просмотров',
     'avatar' => 'Аватар',
-    'about_text' => 'Это мой первый проект на фреймворке Laravel',
     'nothing' => 'Контактов нет',
+    'my_contacts' => 'Мои контакты',
+    'status' => 'Статус',
+    'status_public' => 'Публичный',
+    'status_private' => 'Приватный',
 
     'first_name_required' => 'Заполните имя',
     'first_name_max' => 'Имя не должно превышать :max символов',
@@ -34,4 +37,5 @@ return [
     'avatar_required' => 'Загрузите аватар',
     'avatar_image' => 'Загружаемый файл аватара не является картинкой',
     'avatar_max' => 'Максимальный размер аватара должен быть не более :max кб',
+    'status_required' => 'Выберите статус',
 ];

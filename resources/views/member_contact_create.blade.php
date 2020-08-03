@@ -15,7 +15,7 @@
             </div>
         @endif
 
-        <form action="{{ route('contacts.store') }}" method="post" enctype="multipart/form-data" >
+        <form action="{{ route('member.contacts.store') }}" method="post" enctype="multipart/form-data" >
             @csrf
             <div class="form-group row">
                 <label for="last_name" class="col-sm-2 col-form-label">@lang('contacts.lastname')</label>

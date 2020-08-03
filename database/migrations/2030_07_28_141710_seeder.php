@@ -13,6 +13,7 @@ class Seeder extends Migration
      */
     public function up()
     {
+        (new \UsersSeeder())->run();
         (new \ContactsSeeder())->run();
     }
 

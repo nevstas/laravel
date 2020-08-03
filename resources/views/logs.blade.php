@@ -32,5 +32,5 @@
 
     {{ $logs->links() }}
 
-    <a class="btn btn-primary button" href="{{ route('contacts.index')  }}" role="button">@lang('general.back')</a>
+    <a class="btn btn-primary button" href="{{ route('member.contacts.index')  }}" role="button">@lang('general.back')</a>
 @endsection

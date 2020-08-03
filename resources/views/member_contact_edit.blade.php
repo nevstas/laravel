@@ -15,7 +15,7 @@
             </div>
         @endif
 
-        <form action="{{ route('contacts.update', $contact->id) }}" method="post" enctype="multipart/form-data" >
+        <form action="{{ route('member.contacts.update', $contact->id) }}" method="post" enctype="multipart/form-data" >
             @method('PUT')
             @csrf
             <div class="form-group row">
@@ -52,6 +52,19 @@
                 <label for="avatar" class="col-sm-2 col-form-label">@lang('contacts.avatar')</label>
                 <div class="col-sm-10">
                     <input type="file" class="form-control-file" id="avatar" name="avatar">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">@lang('contacts.status')</label>
+                <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="status" id="status_public" value="public" @if (old('status') == 'public' || (!old('status') && $contact->status == 'public')) checked @endif>
+                        <label class="form-check-label" for="status_public">@lang('contacts.status_public')</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="status" id="status_private" value="private" @if (old('status') == 'private' || (!old('status') && $contact->status == 'private')) checked @endif>
+                        <label class="form-check-label" for="status_private">@lang('contacts.status_private')</label>
+                    </div>
                 </div>
             </div>
             <div class="form-group row">

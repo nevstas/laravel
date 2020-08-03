@@ -8,6 +8,7 @@ use App\Http\Controllers\SystemController;
 class Contact extends Model
 {
     protected $fillable = [
+        'user_id',
         'first_name',
         'last_name',
         'patronymic',
@@ -15,6 +16,7 @@ class Contact extends Model
         'address',
         'avatar',
         'counter_view',
+        'status',
         'is_delete',
     ];
 
@@ -41,6 +43,11 @@ class Contact extends Model
         return htmlspecialchars(SystemController::mb_ucfirst($this->last_name) . " " .
             SystemController::mb_ucfirst(mb_substr($this->first_name, 0, 1)) . ". " .
             SystemController::mb_ucfirst(mb_substr($this->patronymic, 0, 1)) . ".");
+    }
+
+    protected function getStatusHumanAttribute()
+    {
+        return __('contacts.status_' . $this->status);
     }
 
     ////////////////////////

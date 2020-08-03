@@ -4,6 +4,6 @@
 @section('content')
     <h1>@lang('top_menu.about')</h1>
     <p>
-        @lang('contacts.about_text')
+        @lang('about.about_text')
     </p>
 @endsection

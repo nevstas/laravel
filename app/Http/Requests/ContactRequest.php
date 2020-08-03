@@ -29,7 +29,8 @@ class ContactRequest extends FormRequest
             'patronymic' => 'required|max:255',
             'phone' => 'required|max:255',
             'address' => 'required|max:255',
-            'avatar' => 'required|image|max:1',
+            'avatar' => 'required|image|max:100000',
+            'status' => 'required',
         ];
     }
 
@@ -54,6 +55,8 @@ class ContactRequest extends FormRequest
             'avatar.required' => __('contacts.avatar_required'),
             'avatar.image' => __('contacts.avatar_image'),
             'avatar.max' => __('contacts.avatar_max'),
+
+            'status.required' => __('contacts.status_required'),
         ];
     }
 }

@@ -13,20 +13,21 @@
 
 Route::group(['middleware' => 'language'],function ()
 {
-    Route::resource('contacts', 'ContactController');
+    Route::resource('contacts', 'ContactController')->only([
+        'index', 'show'
+    ]);
     Route::get('/', 'ContactController@index')->name('contacts.index');
-    Route::view('/about', 'contact_about')->name('contacts.about');
-    Route::get('contacts/{contact_id}/logs', 'LogController@logs')->name('logs.index');
+    Route::view('/about', 'about')->name('about');
+    Route::get('member/contacts/{contact_id}/logs', 'LogController@logs')->name('logs.index');
     Auth::routes();
-    Route::get('/home', 'HomeController@index')->name('home');
     Route::group(['middleware' => 'auth'],function ()
     {
         Route::view('/profile', 'profile')->name('profile');
+        Route::resource('member/contacts', 'MemberContactController', ['names' => 'member.contacts']);
+        Route::get('member', 'MemberContactController@index')->name('member.contacts.index');
     });
 
 });
-
-
 
 Route::get('change_language/{language}', 'SystemController@changeLanguage')->name('system.change_language');
 

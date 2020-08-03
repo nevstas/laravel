@@ -18,8 +18,11 @@ return [
     'your_address' => 'Your address',
     'views' => 'Views',
     'avatar' => 'Avatar',
-    'about_text' => 'This is my first project on framework Laravel',
     'nothing' => 'Nothing found',
+    'my_contacts' => 'My contacts',
+    'status' => 'Status',
+    'status_public' => 'Public',
+    'status_private' => 'Private',
 
     'first_name_required' => 'Firstname is required',
     'first_name_max' => 'Firstname is too long (maximum is :max characters)',
@@ -34,4 +37,5 @@ return [
     'avatar_required' => 'Avatar is required',
     'avatar_image' => 'Avatar - Please upload only Image',
     'avatar_max' => 'Avatar - Uploaded file was too big (max filesize :max kb)',
+    'status_required' => 'Status is required',
 ];
