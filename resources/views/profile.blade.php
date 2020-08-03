@@ -9,6 +9,12 @@
             <img class="profile__img" src="{{ asset('storage/' . ($user->avatar ? $user->avatar : 'users_avatar/no-image.jpg')) }}">
         </div>
 
+        @if(Session::has('success_save'))
+            <div class="alert alert-success">
+                {{ SESSION::get('success_save') }}
+            </div>
+        @endif
+
         @if($errors->any())
             <div class="alert alert-danger">
                 <ul>

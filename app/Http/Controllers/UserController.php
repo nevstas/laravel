@@ -8,6 +8,7 @@ use App\Log;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class UserController extends Controller
 {
@@ -42,6 +43,7 @@ class UserController extends Controller
             $user['avatar'] = $request->file('avatar')->store('users_avatar');
         }
         $user->save();
+        $request->session()->flash('success_save', __('user.success_save'));
         return redirect()->route('profile.edit');
     }
 }

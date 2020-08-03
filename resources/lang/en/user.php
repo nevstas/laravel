@@ -11,4 +11,6 @@ return [
     'name_max' => 'Name is too long (maximum is :max characters)',
     'avatar_image' => 'Avatar - Please upload only Image',
     'avatar_max' => 'Avatar - Uploaded file was too big (max filesize :max kb)',
+
+    'success_save' => 'Profile has been saved successfully',
 ];

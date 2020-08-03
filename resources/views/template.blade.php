@@ -41,8 +41,8 @@
                             @lang('top_menu.language')
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarLanguage">
-                            <a class="dropdown-item" href="{{ route('system.change_language', 'ru') }}">@lang('top_menu.russian')</a>
-                            <a class="dropdown-item" href="{{ route('system.change_language', 'en') }}">@lang('top_menu.english')</a>
+                            <a class="dropdown-item {{ app()->getLocale() == 'ru' ? 'active' : '' }}" href="{{ route('system.change_language', 'ru') }}">@lang('top_menu.russian')</a>
+                            <a class="dropdown-item {{ app()->getLocale() == 'en' ? 'active' : '' }}" href="{{ route('system.change_language', 'en') }}">@lang('top_menu.english')</a>
                         </div>
                     </li>
                     @guest

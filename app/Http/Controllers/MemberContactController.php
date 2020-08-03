@@ -127,6 +127,9 @@ class MemberContactController extends Controller
     public function destroy($id)
     {
         $contact = Contact::find($id);
+        if ($contact->user_id != Auth::id()) {
+            abort(404);
+        }
         $contact->delete();
         return redirect()->route('member.contacts.index');
     }
