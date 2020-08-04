@@ -2,7 +2,7 @@
 
 return [
     'about' => 'About us',
-    'mycontacts' => 'My contacts',
+    'my_phonebook' => 'My Phone Book',
     'language' => 'Language',
     'russian' => 'Russian',
     'english' => 'English',

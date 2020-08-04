@@ -19,7 +19,7 @@ return [
     'views' => 'Views',
     'avatar' => 'Avatar',
     'nothing' => 'Nothing found',
-    'my_contacts' => 'My contacts',
+    'my_phonebook' => 'My Phone Book',
     'status' => 'Status',
     'status_public' => 'Public',
     'status_private' => 'Private',

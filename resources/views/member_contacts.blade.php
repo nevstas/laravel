@@ -1,8 +1,8 @@
 @extends('template')
-@section('title', __('contacts.my_contacts'))
+@section('title', __('contacts.my_phonebook'))
 
 @section('content')
-    <h1 class="contact__title">@lang('contacts.my_contacts')</h1>
+    <h1 class="contact__title">@lang('contacts.my_phonebook')</h1>
 
     <a class="btn btn-success button" href="{{ route('member.contacts.create') }}" role="button">@lang('contacts.new_contact')</a>
 

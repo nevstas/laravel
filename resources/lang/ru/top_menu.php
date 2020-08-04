@@ -2,7 +2,7 @@
 
 return [
     'about' => 'О проекте',
-    'mycontacts' => 'Мои контакты',
+    'my_phonebook' => 'Мой справочник',
     'language' => 'Язык',
     'russian' => 'Русский',
     'english' => 'Английский',

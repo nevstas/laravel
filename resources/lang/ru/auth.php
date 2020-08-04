@@ -3,6 +3,7 @@
 return [
     'name' => 'Имя',
     'login' => 'Логин',
+    'logout' => 'Выход',
     'register' => 'Регистрация',
     'email' => 'Email адрес',
     'password' => 'Пароль',

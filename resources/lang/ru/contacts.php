@@ -19,7 +19,7 @@ return [
     'views' => 'Просмотров',
     'avatar' => 'Аватар',
     'nothing' => 'Контактов нет',
-    'my_contacts' => 'Мои контакты',
+    'my_phonebook' => 'Мой справочник',
     'status' => 'Статус',
     'status_public' => 'Публичный',
     'status_private' => 'Приватный',
