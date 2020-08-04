@@ -7,7 +7,7 @@
     <a class="btn btn-success button" href="{{ route('member.contacts.create') }}" role="button">@lang('contacts.new_contact')</a>
 
     @if (!$contacts->isEmpty())
-        <table class="table table-responsive table-bordered contact__table">
+        <table class="table table-responsive-md table-bordered contact__table">
             <thead>
             <tr>
                 <th>#</th>
