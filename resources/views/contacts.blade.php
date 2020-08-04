@@ -5,7 +5,7 @@
     <h1 class="contact__title">@lang('contacts.phonebook')</h1>
 
     @if (!$contacts->isEmpty())
-        <table class="table table-bordered contact__table">
+        <table class="table table-responsive table-bordered contact__table">
             <thead>
             <tr>
                 <th>#</th>
