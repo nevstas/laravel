@@ -20,18 +20,18 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('about') }}">@lang('top_menu.about')</a>
+                        <a class="nav-link {{ Route::currentRouteName() == 'about' ? 'active' : '' }}" href="{{ route('about') }}">@lang('top_menu.about')</a>
                     </li>
                     @guest
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">@lang('auth.login')</a>
+                            <a class="nav-link {{ Route::currentRouteName() == 'login' ? 'active' : '' }}" href="{{ route('login') }}">@lang('auth.login')</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">@lang('auth.register')</a>
+                            <a class="nav-link {{ Route::currentRouteName() == 'register' ? 'active' : '' }}" href="{{ route('register') }}">@lang('auth.register')</a>
                         </li>
                     @else
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('member.contacts.index') }}">@lang('top_menu.my_phonebook')</a>
+                            <a class="nav-link {{ Route::currentRouteName() == 'member.contacts.index' ? 'active' : '' }}" href="{{ route('member.contacts.index') }}">@lang('top_menu.my_phonebook')</a>
                         </li>
                     @endguest
                 </ul>
