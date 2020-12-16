@@ -12,8 +12,8 @@
             <tr>
                 <th>#</th>
                 <th></th>
-                <th>@lang('contacts.lastname')</th>
                 <th>@lang('contacts.firstname')</th>
+                <th>@lang('contacts.lastname')</th>
                 <th>@lang('contacts.patronymic')</th>
                 <th>@lang('contacts.phone')</th>
                 <th>@lang('contacts.address')</th>
@@ -28,8 +28,8 @@
                 <tr>
                     <th>{{ $start + $key }}</th>
                     <td><img class="contact__table-img" src="{{ asset('storage/' . $contact->avatar) }}"></td>
-                    <td><a href="{{ route('member.contacts.show', $contact->id) }}">{{ $contact->last_name }}</a></td>
-                    <td>{{ $contact->first_name }}</td>
+                    <td><a href="{{ route('member.contacts.show', $contact->id) }}">{{ $contact->first_name }}</a></td>
+                    <td>{{ $contact->last_name }}</td>
                     <td>{{ $contact->patronymic }}</td>
                     <td><a href="tel:{{ $contact->phone }}">{{ $contact->phone }}</a></td>
                     <td>{{ $contact->address }}</td>

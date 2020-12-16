@@ -1,6 +1,6 @@
 
 ## Phone Book
 
-Мой первый проект на фреймворке Laravel
+This is my first project on framework Laravel
 
-Демо https://laravel.nevep.ru
+Demo https://laravel.nevep.ru
