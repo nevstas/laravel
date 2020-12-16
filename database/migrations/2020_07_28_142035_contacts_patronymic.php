@@ -14,7 +14,7 @@ class ContactsPatronymic extends Migration
     public function up()
     {
         Schema::table('contacts', function (Blueprint $table) {
-            $table->string('patronymic')->after('last_name');
+            $table->string('patronymic')->after('last_name')->nullable();
         });
     }
 

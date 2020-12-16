@@ -46,10 +46,8 @@ class MemberContactController extends Controller
     public function store(ContactRequest $request)
     {
         $contact = $request->all();
-        $contact['user_id'] = Auth::id();
         $contact['avatar'] = $request->file('avatar')->store('avatar');
-        $create = Contact::create($contact);
-        Log::create(['contact_id' => $create->id, 'status' => 'create']);
+        $create = auth()->user()->contacts()->create($contact)->logs()->create(['status' => 'create']);
         return redirect()->route('member.contacts.index');
     }
 
@@ -62,9 +60,7 @@ class MemberContactController extends Controller
     public function show($id)
     {
         $contact = Contact::findOrFail($id);
-        if ($contact->user_id != Auth::id()) {
-            abort(404);
-        }
+        $this->authorize('view', $contact);
         $contact->increment('counter_view');
         Log::create(['contact_id' => $id, 'status' => 'view']);
 
@@ -82,10 +78,7 @@ class MemberContactController extends Controller
     public function edit($id)
     {
         $contact = Contact::findOrFail($id);
-        if ($contact->user_id != Auth::id()) {
-            abort(404);
-        }
-
+        $this->authorize('update', $contact);
         return view('member_contact_edit', [
             'contact' => $contact,
         ]);
@@ -101,9 +94,7 @@ class MemberContactController extends Controller
     public function update(ContactEditRequest $request, $id)
     {
         $contact = Contact::find($id);
-        if ($contact->user_id != Auth::id()) {
-            abort(404);
-        }
+        $this->authorize('update', $contact);
         $contact->first_name = $request->first_name;
         $contact->last_name = $request->last_name;
         $contact->patronymic = $request->patronymic;
@@ -127,9 +118,7 @@ class MemberContactController extends Controller
     public function destroy($id)
     {
         $contact = Contact::find($id);
-        if ($contact->user_id != Auth::id()) {
-            abort(404);
-        }
+        $this->authorize('delete', $contact);
         $contact->delete();
         return redirect()->route('member.contacts.index');
     }

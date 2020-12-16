@@ -10,3 +10,4 @@
         Github <a target="_blank" href="https://github.com/nevstas/laravel">https://github.com/nevstas/laravel</a>
     </p>
 @endsection
+

@@ -18,4 +18,8 @@ class Log extends Model
     {
         return __('logs.status_' . $this->status);
     }
+
+    public function contact() {
+        return $this->belongsTo('App\Contact');
+    }
 }

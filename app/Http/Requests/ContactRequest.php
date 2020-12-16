@@ -26,7 +26,7 @@ class ContactRequest extends FormRequest
         return [
             'first_name' => 'required|max:255',
             'last_name' => 'required|max:255',
-            'patronymic' => 'required|max:255',
+            'patronymic' => 'max:255',
             'phone' => 'required|max:255',
             'address' => 'required|max:255',
             'avatar' => 'required|image|max:100000',
