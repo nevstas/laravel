@@ -12,10 +12,10 @@ $factory->define(Contact::class, function (Faker $faker) {
         'status' => 'public',
         'first_name' => $faker->firstNameMale,
         'last_name' => $faker->lastName,
-        'phone' => '+1' . rand(9999999999, 1000000000),
+        'phone' => $faker->e164PhoneNumber,
         'address' => $faker->address,
         'avatar' => 'avatar/no-image.jpg',
-        'created_at' => $faker->dateTime(),
-        'updated_at' => $faker->dateTime(),
+        'created_at' => now(),
+        'updated_at' => now(),
     ];
 });
