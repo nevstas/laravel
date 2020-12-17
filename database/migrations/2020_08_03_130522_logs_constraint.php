@@ -39,6 +39,8 @@ class LogsConstraint extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('logs', function (Blueprint $table) {
+            $table->dropForeign(['contact_id']);
+        });
     }
 }
