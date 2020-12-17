@@ -42,7 +42,7 @@ class Contact extends Model
     {
         $name = SystemController::mb_ucfirst(mb_substr($this->first_name, 0, 1))
             . '. '
-            . ($this->patronymic ? (SystemController::mb_ucfirst(mb_substr($this->patronymic, 0, 1)). '. ') : '')
+            . ($this->patronymic ? (SystemController::mb_ucfirst(mb_substr($this->patronymic, 0, 1)) . '. ') : '')
             . SystemController::mb_ucfirst($this->last_name);
 
         return $name;
