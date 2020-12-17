@@ -18,7 +18,7 @@ Route::group(['middleware' => 'language'],function ()
     ]);
     Route::get('/', 'ContactController@index')->name('contacts.index');
     Route::view('/about', 'about')->name('about');
-    Route::get('member/contacts/{contact_id}/logs', 'LogController@logs')->name('logs.index');
+    Route::get('member/contacts/{contact}/logs', 'LogController@logs')->name('logs.index');
     Auth::routes();
     Route::group(['middleware' => 'auth'],function ()
     {

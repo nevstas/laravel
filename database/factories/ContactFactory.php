@@ -10,7 +10,7 @@ $factory->define(Contact::class, function (Faker $faker) {
     return [
         'user_id' => User::all()->random()->id,
         'status' => 'public',
-        'first_name' => $faker->firstNameMale,
+        'first_name' => $faker->firstName,
         'last_name' => $faker->lastName,
         'phone' => $faker->e164PhoneNumber,
         'address' => $faker->address,

@@ -18,7 +18,7 @@ class MemberContactController extends Controller
      */
     public function index()
     {
-        $contacts = Contact::where('user_id', Auth::id())->paginate(10);
+        $contacts = auth()->user()->contacts()->paginate(10);
         $start = $contacts->firstItem();
 
         return view('member_contacts', [
@@ -57,12 +57,11 @@ class MemberContactController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Contact $contact)
     {
-        $contact = Contact::findOrFail($id);
         $this->authorize('view', $contact);
         $contact->increment('counter_view');
-        Log::create(['contact_id' => $id, 'status' => 'view']);
+        $contact->logs()->create(['status' => 'view']);
 
         return view('member_contact', [
             'contact' => $contact,
@@ -75,9 +74,8 @@ class MemberContactController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Contact $contact)
     {
-        $contact = Contact::findOrFail($id);
         $this->authorize('update', $contact);
         return view('member_contact_edit', [
             'contact' => $contact,
@@ -91,9 +89,8 @@ class MemberContactController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(ContactEditRequest $request, $id)
+    public function update(ContactEditRequest $request, Contact $contact)
     {
-        $contact = Contact::find($id);
         $this->authorize('update', $contact);
         $contact->first_name = $request->first_name;
         $contact->last_name = $request->last_name;
@@ -102,10 +99,10 @@ class MemberContactController extends Controller
         $contact->address = $request->address;
         $contact->status = $request->status;
         if ($request->file('avatar')) {
-            $contact['avatar'] = $request->file('avatar')->store('avatar');
+            $contact->avatar = $request->file('avatar')->store('avatar');
         }
         $contact->save();
-        Log::create(['contact_id' => $id, 'status' => 'update']);
+        $contact->logs()->create(['status' => 'update']);
         return redirect()->route('member.contacts.index');
     }
 
@@ -115,9 +112,8 @@ class MemberContactController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Contact $contact)
     {
-        $contact = Contact::find($id);
         $this->authorize('delete', $contact);
         $contact->delete();
         return redirect()->route('member.contacts.index');

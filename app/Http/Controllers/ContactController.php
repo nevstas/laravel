@@ -35,9 +35,8 @@ class ContactController extends Controller
     public function show($id)
     {
         $contact = Contact::where('status', 'public')->findOrFail($id);
-
         $contact->increment('counter_view');
-        Log::create(['contact_id' => $id, 'status' => 'view']);
+        $contact->logs()->create(['status' => 'view']);
 
         return view('contact', [
             'contact' => $contact,
