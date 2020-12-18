@@ -48,7 +48,7 @@ $('.contact__btn-remove').click(function(){
         cancelButtonText: translations.contacts.no_cancel,
     }).then((result) => {
         if (result.value) {
-            document.querySelector('.contact__form-remove').submit();
+            $(this).parent().find('.contact__form-remove').submit();
         }
     })
 

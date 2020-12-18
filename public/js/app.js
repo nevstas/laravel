@@ -40496,6 +40496,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // requir
 
 
 $('.contact__btn-remove').click(function () {
+  var _this = this;
+
   event.preventDefault();
   Swal.fire({
     title: translations.contacts.are_you_sure,
@@ -40508,7 +40510,7 @@ $('.contact__btn-remove').click(function () {
     cancelButtonText: translations.contacts.no_cancel
   }).then(function (result) {
     if (result.value) {
-      document.querySelector('.contact__form-remove').submit();
+      $(_this).parent().find('.contact__form-remove').submit();
     }
   });
 });

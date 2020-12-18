@@ -47,7 +47,7 @@ class MemberContactController extends Controller
     {
         $contact = $request->all();
         $contact['avatar'] = $request->file('avatar')->store('avatar');
-        $create = auth()->user()->contacts()->create($contact)->logs()->create(['status' => 'create']);
+        auth()->user()->contacts()->create($contact)->logs()->create(['status' => 'create']);
         return redirect()->route('member.contacts.index');
     }
 
@@ -92,16 +92,12 @@ class MemberContactController extends Controller
     public function update(ContactEditRequest $request, Contact $contact)
     {
         $this->authorize('update', $contact);
-        $contact->first_name = $request->first_name;
-        $contact->last_name = $request->last_name;
-        $contact->patronymic = $request->patronymic;
-        $contact->phone = $request->phone;
-        $contact->address = $request->address;
-        $contact->status = $request->status;
+
+        $fields = $request->all();
         if ($request->file('avatar')) {
-            $contact->avatar = $request->file('avatar')->store('avatar');
+            $fields['avatar'] = $request->file('avatar')->store('avatar');
         }
-        $contact->save();
+        $contact->fill($fields)->save();
         $contact->logs()->create(['status' => 'update']);
         return redirect()->route('member.contacts.index');
     }

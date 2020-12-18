@@ -11,12 +11,12 @@
     <table class="table table-bordered contact__table">
         <tbody>
             <tr>
-                <td>@lang('contacts.lastname')</td>
-                <td>{{ $contact->last_name }}</td>
-            </tr>
-            <tr>
                 <td>@lang('contacts.firstname')</td>
                 <td>{{ $contact->first_name }}</td>
+            </tr>
+            <tr>
+                <td>@lang('contacts.lastname')</td>
+                <td>{{ $contact->last_name }}</td>
             </tr>
             <tr>
                 <td>@lang('contacts.patronymic')</td>
