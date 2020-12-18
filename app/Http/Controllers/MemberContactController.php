@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Contact;
 use App\Http\Requests\ContactEditRequest;
 use App\Http\Requests\ContactRequest;
-use App\Log;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -111,6 +111,7 @@ class MemberContactController extends Controller
     public function destroy(Contact $contact)
     {
         $this->authorize('delete', $contact);
+        Storage::delete($contact->avatar);
         $contact->delete();
         return redirect()->route('member.contacts.index');
     }
