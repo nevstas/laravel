@@ -21,7 +21,7 @@ class MemberContactController extends Controller
         $contacts = auth()->user()->contacts()->paginate(10);
         $start = $contacts->firstItem();
 
-        return view('member_contacts', [
+        return view('member_contact.index', [
             'contacts' => $contacts,
             'start' => $start,
         ]);
@@ -34,7 +34,7 @@ class MemberContactController extends Controller
      */
     public function create()
     {
-        return view('member_contact_create');
+        return view('member_contact.create');
     }
 
     /**
@@ -63,7 +63,7 @@ class MemberContactController extends Controller
         $contact->increment('counter_view');
         $contact->logs()->create(['status' => 'view']);
 
-        return view('member_contact', [
+        return view('member_contact.show', [
             'contact' => $contact,
         ]);
     }
@@ -77,7 +77,7 @@ class MemberContactController extends Controller
     public function edit(Contact $contact)
     {
         $this->authorize('update', $contact);
-        return view('member_contact_edit', [
+        return view('member_contact.edit', [
             'contact' => $contact,
         ]);
     }

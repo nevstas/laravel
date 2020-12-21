@@ -16,7 +16,7 @@ class LogController extends Controller
         $logs = $contact->logs()->orderBy('created_at', 'desc')->paginate(10);
         $start = $logs->firstItem();
 
-        return view('logs', [
+        return view('log.index', [
             'contact' => $contact,
             'logs' => $logs,
             'start' => $start,
