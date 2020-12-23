@@ -1,4 +1,4 @@
-@extends('template')
+@extends('layouts.template')
 @section('title', __('top_menu.about'))
 
 @section('content')

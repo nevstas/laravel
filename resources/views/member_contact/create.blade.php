@@ -1,4 +1,4 @@
-@extends('template')
+@extends('layouts.template')
 @section('title', __('contacts.new_contact'))
 
 @section('content')

@@ -1,4 +1,4 @@
-@extends('template')
+@extends('layouts.template')
 @section('title', __('contacts.edit_contact', ['name' => $contact->format_name]))
 
 @section('content')

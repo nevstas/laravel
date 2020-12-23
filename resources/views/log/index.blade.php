@@ -1,4 +1,4 @@
-@extends('template')
+@extends('layouts.template')
 @section('title', __('logs.logs_ext', ['name' => $contact->format_name]))
 
 @section('content')
