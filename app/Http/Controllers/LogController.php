@@ -13,13 +13,9 @@ class LogController extends Controller
     public function logs(Contact $contact)
     {
         $this->authorize('view', $contact);
-        $logs = $contact->logs()->orderBy('created_at', 'desc')->paginate(10);
+        $logs = $contact->logs()->latest()->paginate(10);
         $start = $logs->firstItem();
 
-        return view('log.index', [
-            'contact' => $contact,
-            'logs' => $logs,
-            'start' => $start,
-        ]);
+        return view('log.index', compact('contact', 'logs', 'start'));
     }
 }

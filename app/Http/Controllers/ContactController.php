@@ -20,10 +20,7 @@ class ContactController extends Controller
         $contacts = Contact::where('status', 'public')->paginate(10);
         $start = $contacts->firstItem();
 
-        return view('contact.index', [
-            'contacts' => $contacts,
-            'start' => $start,
-        ]);
+        return view('contact.index', compact('contacts', 'start'));
     }
 
     /**
@@ -38,8 +35,6 @@ class ContactController extends Controller
         $contact->increment('counter_view');
         $contact->logs()->create(['status' => 'view']);
 
-        return view('contact.show', [
-            'contact' => $contact,
-        ]);
+        return view('contact.show', compact('contact'));
     }
 }
