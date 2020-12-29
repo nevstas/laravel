@@ -12,16 +12,16 @@ class ContactPolicy
 
     public function view(User $user, Contact $contact)
     {
-        return $user->id === $contact->user_id;
+        return $contact->user->is($user);
     }
 
     public function update(User $user, Contact $contact)
     {
-        return $user->id === $contact->user_id;
+        return $contact->user->is($user);
     }
 
     public function delete(User $user, Contact $contact)
     {
-        return $user->id === $contact->user_id;
+        return $contact->user->is($user);
     }
 }

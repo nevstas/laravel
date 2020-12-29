@@ -41,7 +41,7 @@
         </tbody>
     </table>
 
-    <a class="btn btn-primary button" href="{{ route('contacts.index')  }}" role="button">@lang('general.back')</a>
+    <a class="btn btn-primary button" href="{{ route('member.contacts.index')  }}" role="button">@lang('general.back')</a>
     <a class="btn btn-primary button button--additional" href="{{ route('member.contacts.edit', $contact->id)  }}" role="button">@lang('general.edit')</a>
     <a class="btn btn-primary button button--additional" href="{{ route('logs.index', $contact->id)  }}" role="button">@lang('logs.logs')</a>
 @endsection

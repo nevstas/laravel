@@ -39,7 +39,7 @@
                         <a class="btn btn-primary button" href="{{ route('logs.index', $contact->id) }}" role="button">@lang('logs.logs')</a>
                     </td>
                     <td>
-                        <a class="btn btn-primary button contact__btn-remove" href="javascript:void(0)" role="button" onclick="">@lang('contacts.delete')</a>
+                        <a class="btn btn-danger button contact__btn-remove" href="javascript:void(0)" role="button" onclick="">@lang('contacts.delete')</a>
                         <form class="contact__form-remove" action="{{ route('member.contacts.destroy', $contact->id) }}" method="POST">
                             @method('DELETE')
                             @csrf
