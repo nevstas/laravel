@@ -41,4 +41,9 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Contact');
     }
+
+    protected function getAvatarAttribute($value)
+    {
+        return 'storage/' . ($value ? $value : 'avatar/no-image.jpg');
+    }
 }

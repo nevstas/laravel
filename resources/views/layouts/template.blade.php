@@ -50,7 +50,7 @@
                         <li class="nav-item dropdown">
 
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                <img class="nav-item__avatar" src="{{ asset('storage/' . (Auth::user()->avatar ? Auth::user()->avatar : 'users_avatar/no-image.jpg')) }}">
+                                <img class="nav-item__avatar" src="{{ asset(Auth::user()->avatar) }}">
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
 

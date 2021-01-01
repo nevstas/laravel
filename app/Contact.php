@@ -50,6 +50,11 @@ class Contact extends Model
         return __('contacts.status_' . $this->status);
     }
 
+    protected function getAvatarAttribute($value)
+    {
+        return 'storage/' . ($value ? $value : 'avatar/no-image.jpg');
+    }
+
     ////////////////////////
     /// Сетеры
     ////////////////////////

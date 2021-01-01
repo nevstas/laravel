@@ -14,7 +14,6 @@ $factory->define(Contact::class, function (Faker $faker) {
         'last_name' => $faker->lastName,
         'phone' => $faker->e164PhoneNumber,
         'address' => $faker->address,
-        'avatar' => 'avatar/no-image.jpg',
         'created_at' => now(),
         'updated_at' => now(),
     ];

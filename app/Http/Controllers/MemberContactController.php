@@ -104,9 +104,6 @@ class MemberContactController extends Controller
     public function destroy(Contact $contact)
     {
         $this->authorize('delete', $contact);
-        if ($contact->avatar != 'avatar/no-image.jpg') {
-            Storage::delete($contact->avatar);
-        }
         $contact->delete();
         return redirect()->route('member.contacts.index');
     }

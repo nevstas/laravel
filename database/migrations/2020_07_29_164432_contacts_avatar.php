@@ -14,7 +14,7 @@ class ContactsAvatar extends Migration
     public function up()
     {
         Schema::table('contacts', function (Blueprint $table) {
-            $table->string('avatar')->after('address');
+            $table->string('avatar')->after('address')->nullable();
         });
     }
 

@@ -6,7 +6,7 @@
         <h1 class="profile__title">@lang('user.profile')</h1>
 
         <div class="profile__img-container">
-            <img class="profile__img" src="{{ asset('storage/' . ($user->avatar ? $user->avatar : 'users_avatar/no-image.jpg')) }}">
+            <img class="profile__img" src="{{ asset($user->avatar) }}">
         </div>
 
         @if(Session::has('success_save'))

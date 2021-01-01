@@ -5,7 +5,7 @@
     <h1 class="contact__title">@lang('contacts.contact_ext', ['name' => $contact->format_name])</h1>
 
     <div class="contact__img-container">
-        <img class="contact__img" src="{{ asset('storage/' . $contact->avatar) }}">
+        <img class="contact__img" src="{{ asset($contact->avatar) }}">
     </div>
 
     <table class="table table-bordered contact__table">
