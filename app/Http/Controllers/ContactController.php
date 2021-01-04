@@ -2,11 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ContactRequest;
-use App\Http\Requests\ContactEditRequest;
-use Illuminate\Http\Request;
 use App\Contact;
-use App\Log;
 
 class ContactController extends Controller
 {

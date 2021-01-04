@@ -2,11 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 use App\Contact;
-use App\Log;
-use Illuminate\Support\Facades\Auth;
 
 class LogController extends Controller
 {

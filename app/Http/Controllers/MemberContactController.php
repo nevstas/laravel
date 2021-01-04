@@ -5,9 +5,6 @@ namespace App\Http\Controllers;
 use App\Contact;
 use App\Http\Requests\ContactEditRequest;
 use App\Http\Requests\ContactRequest;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class MemberContactController extends Controller
 {

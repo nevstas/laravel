@@ -2,9 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Contact;
 use App\Http\Requests\UserRequest;
-use App\Log;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
