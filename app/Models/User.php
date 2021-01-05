@@ -48,6 +48,6 @@ class User extends Authenticatable
 
     protected function getAvatarAttribute($value)
     {
-        return 'storage/' . ($value ? $value : 'users_avatar/no-image.jpg');
+        return $value ? 'storage/' . $value : 'img/no-image.jpg';
     }
 }

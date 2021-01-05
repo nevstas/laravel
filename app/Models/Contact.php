@@ -54,7 +54,7 @@ class Contact extends Model
 
     protected function getAvatarAttribute($value)
     {
-        return 'storage/' . ($value ? $value : 'avatar/no-image.jpg');
+        return $value ? 'storage/' . $value : 'img/no-image.jpg';
     }
 
     ////////////////////////
