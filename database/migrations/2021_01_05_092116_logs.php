@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class Logs extends Migration
 {
@@ -14,13 +14,11 @@ class Logs extends Migration
     public function up()
     {
         Schema::create('logs', function (Blueprint $table) {
-            $table->Increments('id');
-            $table->Integer('contact_id')->unsigned();
-            $table->enum('status', ['create', 'view', 'delete']);
+            $table->id();
+            $table->foreignId('contact_id');
+            $table->enum('status', ['create', 'view', 'update', 'delete']);
             $table->timestamps();
-        });
 
-        Schema::table('logs', function(Blueprint $table) {
             $table->foreign('contact_id')
                 ->references('id')
                 ->on('contacts')

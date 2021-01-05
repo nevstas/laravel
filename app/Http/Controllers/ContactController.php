@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Contact;
+use Illuminate\Http\Request;
+use App\Models\Contact;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class ContactController extends Controller
 {
+    use HasFactory;
     /**
      * Display a listing of the resource.
      *
@@ -13,6 +16,8 @@ class ContactController extends Controller
      */
     public function index()
     {
+//        Contact::factory()->create();
+
         $contacts = Contact::where('status', 'public')->paginate(10);
         $start = $contacts->firstItem();
 

@@ -1,6 +1,12 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
+use Illuminate\Http\File;
+use Illuminate\Support\Facades\DB;
+use Faker\Generator as Faker;
+use Illuminate\Support\Facades\Storage;
 
 class UsersSeeder extends Seeder
 {
@@ -11,6 +17,7 @@ class UsersSeeder extends Seeder
      */
     public function run()
     {
+
         DB::table('users')->insert([
             'name' => 'Alex',
             'email' => 'alex@mail.ru',

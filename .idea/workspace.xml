@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="44c49863-f496-491f-9870-43796b07f708" name="Default Changelist" comment="рефакторинг">
+      <change afterPath="$PROJECT_DIR$/.idea/laravel.local.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/TrustHosts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/en/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.styleci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.styleci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MemberContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MemberContactController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SystemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SystemController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/PreventRequestsDuringMaintenance.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/LanguageSwitcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/LanguageSwitcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ContactEditRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ContactEditRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Log.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Log.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/MemberContact.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MemberContact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/ContactPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/ContactPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/broadcasting.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/broadcasting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/logging.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/logging.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/queue.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/queue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ContactFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ContactFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_27_081259_contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_05_092106_contacts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_27_081612_logs.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_05_092116_logs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_28_135649_contacts_last_name.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_28_142035_contacts_patronymic.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_29_164432_contacts_avatar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_02_205424_logs_status.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_03_124124_contacts_userid_status.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_03_130522_logs_constraint.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_03_144841_users_avatar.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_05_092853_users_avatar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_17_142123_contacts_constraint.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2030_07_28_141710_seeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2030_07_28_141710_seeder_run.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/ContactsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ContactsSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UsersSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UsersSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/channels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/console.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/debugbar/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1fAhvS29A3gPsZUHZqiy6m092oK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/storage/app/public/avatar" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="Z:\OpenServer\domains\laravel.local\storage\app\public\avatar" />
+      <recent name="Z:\OpenServer\domains\laravel.local\storage\app\public\users_avatar" />
+      <recent name="Z:\OpenServer\domains\laravel.local\resources\sass" />
+      <recent name="Z:\OpenServer\domains\laravel.local\app" />
+      <recent name="Z:\OpenServer\domains\laravel.local\resources\lang\ru" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="Z:\OpenServer\domains\laravel.local\resources\views\layouts" />
+      <recent name="Z:\OpenServer\domains\laravel.local\resources\views\log" />
+      <recent name="Z:\OpenServer\domains\laravel.local\resources\views\contact" />
+      <recent name="Z:\OpenServer\domains\laravel.local\resources\views\member_contact" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="44c49863-f496-491f-9870-43796b07f708" name="Default Changelist" comment="" />
+      <created>1595667034788</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595667034788</updated>
+      <workItem from="1595667036412" duration="2924000" />
+      <workItem from="1595688631652" duration="9564000" />
+      <workItem from="1595839917732" duration="38000" />
+      <workItem from="1595839964355" duration="1298000" />
+      <workItem from="1595848618214" duration="4713000" />
+      <workItem from="1595916859727" duration="2183000" />
+      <workItem from="1595939286455" duration="2906000" />
+      <workItem from="1595943504401" duration="3645000" />
+      <workItem from="1595947208391" duration="531000" />
+      <workItem from="1595947796437" duration="5215000" />
+      <workItem from="1595964652856" duration="1262000" />
+      <workItem from="1596004774806" duration="1603000" />
+      <workItem from="1596031416381" duration="813000" />
+      <workItem from="1596032256354" duration="1597000" />
+      <workItem from="1596035497994" duration="12756000" />
+      <workItem from="1596094461041" duration="1392000" />
+      <workItem from="1596105047700" duration="1200000" />
+      <workItem from="1596119325799" duration="7216000" />
+      <workItem from="1596183225757" duration="12057000" />
+      <workItem from="1596279347747" duration="49000" />
+      <workItem from="1596279436496" duration="104000" />
+      <workItem from="1596293156751" duration="2000" />
+      <workItem from="1596299519897" duration="15734000" />
+      <workItem from="1596375858656" duration="13138000" />
+      <workItem from="1596436690820" duration="6309000" />
+      <workItem from="1596443378216" duration="4571000" />
+      <workItem from="1596448753276" duration="8673000" />
+      <workItem from="1596458294492" duration="3508000" />
+      <workItem from="1596462742777" duration="118000" />
+      <workItem from="1596462886877" duration="17000" />
+      <workItem from="1596462909366" duration="8381000" />
+      <workItem from="1596549237773" duration="1625000" />
+      <workItem from="1596552981037" duration="601000" />
+      <workItem from="1596563087501" duration="13000" />
+      <workItem from="1596563115507" duration="5433000" />
+      <workItem from="1596690587221" duration="1229000" />
+      <workItem from="1596824527391" duration="1126000" />
+      <workItem from="1596990482523" duration="1537000" />
+      <workItem from="1597058840014" duration="28000" />
+      <workItem from="1597085851043" duration="89000" />
+      <workItem from="1597089039186" duration="157000" />
+      <workItem from="1597089221259" duration="8000" />
+      <workItem from="1597089284281" duration="1215000" />
+      <workItem from="1597129422899" duration="5000" />
+      <workItem from="1597129479128" duration="2134000" />
+      <workItem from="1597415692547" duration="1313000" />
+      <workItem from="1597418180903" duration="4000" />
+      <workItem from="1597418470735" duration="7000" />
+      <workItem from="1597427338620" duration="13000" />
+      <workItem from="1597431236938" duration="58000" />
+      <workItem from="1597431384344" duration="55000" />
+      <workItem from="1597431452583" duration="6000" />
+      <workItem from="1597432261676" duration="11000" />
+      <workItem from="1597432434027" duration="90000" />
+      <workItem from="1597432540736" duration="16000" />
+      <workItem from="1597582380854" duration="651000" />
+      <workItem from="1597755772548" duration="1396000" />
+      <workItem from="1597763504383" duration="1211000" />
+      <workItem from="1597862961082" duration="1826000" />
+      <workItem from="1598001044315" duration="602000" />
+      <workItem from="1598009747940" duration="10000" />
+      <workItem from="1599394850103" duration="102000" />
+      <workItem from="1599394997041" duration="714000" />
+      <workItem from="1600451162589" duration="4475000" />
+      <workItem from="1608114993232" duration="19538000" />
+      <workItem from="1608294029280" duration="2159000" />
+      <workItem from="1608315081203" duration="7290000" />
+      <workItem from="1608375551934" duration="2570000" />
+      <workItem from="1608477770372" duration="909000" />
+      <workItem from="1608555948383" duration="3098000" />
+      <workItem from="1608631624082" duration="2738000" />
+      <workItem from="1608659530619" duration="24574000" />
+      <workItem from="1609158726050" duration="608000" />
+      <workItem from="1609159573105" duration="1303000" />
+      <workItem from="1609180660664" duration="3306000" />
+      <workItem from="1609523998930" duration="10211000" />
+      <workItem from="1609695342711" duration="38000" />
+      <workItem from="1609695387624" duration="668000" />
+      <workItem from="1609697959364" duration="610000" />
+      <workItem from="1609763760034" duration="4893000" />
+      <workItem from="1609787705752" duration="9000" />
+      <workItem from="1609787859089" duration="1568000" />
+      <workItem from="1609838604611" duration="2363000" />
+      <workItem from="1609841007001" duration="1996000" />
+      <workItem from="1609843269888" duration="6031000" />
+    </task>
+    <task id="LOCAL-00005" summary="Добавлены доп поля в миграции, seeder перенесен на 10 лет в перед">
+      <created>1595946317663</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1595946317663</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Bootstrap подключен через mix(webpack), компиляция scss через mix">
+      <created>1595949761293</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1595949761293</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Добавлено валидация и добавление контактов">
+      <created>1596037770210</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1596037770211</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Добавлена загрузка аватара">
+      <created>1596044022251</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1596044022251</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Добавлены имена для Route">
+      <created>1596120584991</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1596120584991</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Добавлено отображение логов на странице контакта и на главной, использованы связи без JOIN">
+      <created>1596187842145</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1596187842145</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Скрыты кнопки логов если логов нет">
+      <created>1596279381389</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1596279381389</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Логи вынесены на отдельную страницу">
+      <created>1596300452121</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1596300452121</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Добавлена локализация">
+      <created>1596367698970</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1596367698970</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Добавлена постраничная навигация, добавлено больше данных в ContactsSeeder.php">
+      <created>1596370803360</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1596370803360</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Добавлена постраничная навигация">
+      <created>1596385501215</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1596385501215</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Контроллер Contact переделан под Resource Controller">
+      <created>1596388276166</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1596388276166</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Добавлены правила валидации ContactEditRequest, наследованные от ContactRequest">
+      <created>1596389249432</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1596389249432</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Изменено поле logs.status">
+      <created>1596391442707</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1596391442707</updated>
+    </task>
+    <task id="LOCAL-00019" summary="gitignore - /.idea">
+      <created>1596391513688</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1596391513688</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Удалена из git /.idea">
+      <created>1596391717950</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1596391717950</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Изменен readme.md">
+      <created>1596392079987</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1596392079987</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Изменен readme.md">
+      <created>1596392130720</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1596392130720</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Исправлена XSS">
+      <created>1596436453639</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1596436453639</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Добавлен auth - регистрация, авторизация, восстановления пароля">
+      <created>1596443001837</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1596443001837</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Контакты - дочерние элементы пользователя">
+      <created>1596453348534</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1596453348534</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Добавлена страница профиля">
+      <created>1596458929332</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1596458929332</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Добавлена страница профиля">
+      <created>1596458992849</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1596458992849</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Локализация в JavaScript коде">
+      <created>1596464765175</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1596464765175</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Добавлена проверка пользователя на логи и удаление контакта">
+      <created>1596473686754</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1596473686754</updated>
+    </task>
+    <task id="LOCAL-00030" summary="defaultStringLength(191)">
+      <created>1596550161777</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1596550161777</updated>
+    </task>
+    <task id="LOCAL-00031" summary="defaultStringLength(191)">
+      <created>1596552108970</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1596552108970</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Таблицам добавлен класс table-responsive">
+      <created>1596563270385</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1596563270385</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Таблицам добавлен класс table-responsive">
+      <created>1596563439911</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1596563439911</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Редирект авторизованных пользователей при открытии страниц авторизации, регистрации и т.д.">
+      <created>1596570636110</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1596570636110</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Класс active для пунктов верхнего меню">
+      <created>1596824828517</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1596824828517</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Gitlab -&gt; Github">
+      <created>1599394909162</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1599394909162</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Добавлен ContactPolicy&#10;Переведены Seeds на английский&#10;Язык по умолчанию английский">
+      <created>1608120500212</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1608120500212</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Исправлены Seeds">
+      <created>1608120871523</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1608120871523</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Исправлены инициалы">
+      <created>1608125525699</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1608125525699</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Констрент с contacts на users">
+      <created>1608204196725</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1608204196725</updated>
+    </task>
+    <task id="LOCAL-00041" summary="заполнение контактов с помощью Faker">
+      <created>1608206255475</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1608206255475</updated>
+    </task>
+    <task id="LOCAL-00042" summary="заполнение контактов с помощью Faker">
+      <created>1608209291300</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1608209291300</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Рефакторинг добавления записе">
+      <created>1608233293042</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1608233293042</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Исправлено удаление записей">
+      <created>1608316722634</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1608316722634</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Удаление аватара контакта, при удалении контакта">
+      <created>1608324654665</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1608324654665</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Исправлены атрибуты $fillable">
+      <created>1608325209156</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1608325209156</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Исправлено удаление контактов">
+      <created>1608478064178</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1608478064178</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Рефакторинг названий/путей view">
+      <created>1608574844765</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1608574844765</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Рефакторинг вызова view">
+      <created>1608722631906</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1608722631906</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Рефакторинг routes и layouts">
+      <created>1608733938310</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1608733938310</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Мелкие правки (цвет кнопки удалить, условия в ContactPolicy)">
+      <created>1609243012452</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1609243012452</updated>
+    </task>
+    <task id="LOCAL-00052" summary="исправлено поле avatar в контактах и пользователях">
+      <created>1609525125191</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1609525125191</updated>
+    </task>
+    <task id="LOCAL-00053" summary="рефакторинг">
+      <created>1609787258342</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1609787258344</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Контакты - дочерние элементы пользователя" />
+    <MESSAGE value="Добавлена страница профиля" />
+    <MESSAGE value="Локализация в JavaScript коде" />
+    <MESSAGE value="Добавлена проверка пользователя на логи и удаление контакта" />
+    <MESSAGE value="defaultStringLength(191)" />
+    <MESSAGE value="Таблицам добавлен класс table-responsive" />
+    <MESSAGE value="Редирект авторизованных пользователей при открытии страниц авторизации, регистрации и т.д." />
+    <MESSAGE value="Класс active для пунктов верхнего меню" />
+    <MESSAGE value="Gitlab -&gt; Github" />
+    <MESSAGE value="Добавлен ContactPolicy&#10;Переведены Seeds на английский&#10;Язык по умолчанию английский" />
+    <MESSAGE value="Исправлены Seeds" />
+    <MESSAGE value="Исправлены инициалы" />
+    <MESSAGE value="Констрент с contacts на users" />
+    <MESSAGE value="заполнение контактов с помощью Faker" />
+    <MESSAGE value="Рефакторинг добавления записе" />
+    <MESSAGE value="Исправлено удаление записей" />
+    <MESSAGE value="Удаление аватара контакта, при удалении контакта" />
+    <MESSAGE value="Исправлены атрибуты $fillable" />
+    <MESSAGE value="Исправлено удаление контактов" />
+    <MESSAGE value="Рефакторинг названий/путей view" />
+    <MESSAGE value="Рефакторинг вызова view" />
+    <MESSAGE value="Рефакторинг routes и layouts" />
+    <MESSAGE value="Мелкие правки (цвет кнопки удалить, условия в ContactPolicy)" />
+    <MESSAGE value="исправлено поле avatar в контактах и пользователях" />
+    <MESSAGE value="рефакторинг" />
+    <option name="LAST_COMMIT_MESSAGE" value="рефакторинг" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="530" y="184" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609848580308">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="530" y="184" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1609848580308" />
+    <state x="152" y="67" width="1280" height="717" maximized="true" key="DiffContextDialog" timestamp="1609845556106">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="152" y="67" width="1280" height="717" maximized="true" key="DiffContextDialog/0.0.1600.860@0.0.1600.860" timestamp="1609845556106" />
+    <state x="580" y="184" key="FileChooserDialogImpl" timestamp="1609787388484">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1609787388484" />
+    <state x="634" y="353" key="NewPhpFileDialog" timestamp="1609842325846">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="634" y="353" key="NewPhpFileDialog/0.0.1600.860@0.0.1600.860" timestamp="1609842325846" />
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1609787259496">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1609787259496" />
+    <state x="506" y="163" width="650" height="654" key="find.popup" timestamp="1609847694340">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="506" y="163" width="650" height="654" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1609847694340" />
+  </component>
+</project>

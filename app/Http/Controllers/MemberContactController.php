@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Contact;
+use Illuminate\Http\Request;
+use App\Models\Contact;
 use App\Http\Requests\ContactEditRequest;
 use App\Http\Requests\ContactRequest;
 

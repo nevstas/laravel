@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class UsersAvatar extends Migration
 {
@@ -15,8 +15,7 @@ class UsersAvatar extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->string('avatar')->after('email')->nullable();
-        });
-    }
+        });    }
 
     /**
      * Reverse the migrations.

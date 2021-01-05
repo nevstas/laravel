@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class Contacts extends Migration
 {
@@ -14,13 +14,23 @@ class Contacts extends Migration
     public function up()
     {
         Schema::create('contacts', function (Blueprint $table) {
-            $table->Increments('id');
+            $table->id();
+            $table->foreignId('user_id');
+            $table->enum('status', ['public', 'private'])->default('public');
             $table->string('first_name');
+            $table->string('last_name');
+            $table->string('patronymic')->nullable();
             $table->string('phone');
             $table->string('address');
+            $table->string('avatar')->nullable();
             $table->integer('counter_view')->default(0);
-            $table->enum('is_delete', ['Y', 'N'])->default('N');
             $table->timestamps();
+
+            $table->foreign('user_id')
+                ->references('id')
+                ->on('users')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
         });
     }
 

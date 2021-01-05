@@ -1,12 +1,14 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Http\Controllers\SystemController;
 
 class MemberContact extends Model
 {
+    use HasFactory;
+
     protected $fillable = [
         'first_name',
         'last_name',
@@ -19,11 +21,11 @@ class MemberContact extends Model
 
     public function logs()
     {
-        return $this->hasMany('App\Log');
+        return $this->hasMany('App\Models\Log');
     }
 
     public function user()
     {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('App\Models\User');
     }
 }
