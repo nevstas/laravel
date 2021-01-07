@@ -30,12 +30,6 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label for="patronymic" class="col-sm-2 col-form-label">@lang('contacts.patronymic')</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="patronymic" name="patronymic" placeholder="@lang('contacts.your_patronymic')" value="{{ old('patronymic')  }}">
-                </div>
-            </div>
-            <div class="form-group row">
                 <label for="phone" class="col-sm-2 col-form-label">@lang('contacts.phone')</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="phone" name="phone" placeholder="@lang('contacts.your_phone')" value="{{ old('phone')  }}">

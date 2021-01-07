@@ -12,7 +12,6 @@ class MemberContact extends Model
     protected $fillable = [
         'first_name',
         'last_name',
-        'patronymic',
         'phone',
         'address',
         'avatar',

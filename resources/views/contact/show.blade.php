@@ -19,10 +19,6 @@
                 <td>{{ $contact->last_name }}</td>
             </tr>
             <tr>
-                <td>@lang('contacts.patronymic')</td>
-                <td>{{ $contact->patronymic }}</td>
-            </tr>
-            <tr>
                 <td>@lang('contacts.phone')</td>
                 <td><a href="tel:{{ $contact->phone }}">{{ $contact->phone }}</a></td>
             </tr>

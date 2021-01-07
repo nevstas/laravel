@@ -12,7 +12,6 @@ class Contact extends Model
     protected $fillable = [
         'first_name',
         'last_name',
-        'patronymic',
         'phone',
         'address',
         'avatar',
@@ -32,16 +31,10 @@ class Contact extends Model
         return \App\Http\Controllers\SystemController::mb_ucfirst($value);
     }
 
-    protected function getPatronymicAttribute($value)
-    {
-        return \App\Http\Controllers\SystemController::mb_ucfirst($value);
-    }
-
     protected function getFormatNameAttribute()
     {
         $name = \App\Http\Controllers\SystemController::mb_ucfirst(mb_substr($this->first_name, 0, 1))
             . '. '
-            . ($this->patronymic ? (\App\Http\Controllers\SystemController::mb_ucfirst(mb_substr($this->patronymic, 0, 1)) . '. ') : '')
             . \App\Http\Controllers\SystemController::mb_ucfirst($this->last_name);
 
         return $name;
@@ -68,11 +61,6 @@ class Contact extends Model
     protected function setLastNameAttribute($value)
     {
         $this->attributes['last_name'] = \App\Http\Controllers\SystemController::mb_ucfirst($value);
-    }
-
-    protected function setPatronymicAttribute($value)
-    {
-        $this->attributes['patronymic'] = \App\Http\Controllers\SystemController::mb_ucfirst($value);
     }
 
     protected function setPhoneAttribute($value)

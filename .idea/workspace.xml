@@ -19,11 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44c49863-f496-491f-9870-43796b07f708" name="Default Changelist" comment="Fix Mysql Error">
-      <change afterPath="$PROJECT_DIR$/public/img/no-image.jpg" afterDir="false" />
+    <list default="true" id="44c49863-f496-491f-9870-43796b07f708" name="Default Changelist" comment="Дефолтный аватар перенесен в папку img">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ContactRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ContactRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/MemberContact.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MemberContact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_05_092106_contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_05_092106_contacts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/contacts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ru/contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ru/contacts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/member_contact/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/member_contact/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/member_contact/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/member_contact/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/member_contact/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/member_contact/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/member_contact/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/member_contact/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,14 +289,8 @@
       <workItem from="1609787859089" duration="1568000" />
       <workItem from="1609838604611" duration="2363000" />
       <workItem from="1609841007001" duration="1996000" />
-      <workItem from="1609843269888" duration="7932000" />
-    </task>
-    <task id="LOCAL-00007" summary="Добавлено валидация и добавление контактов">
-      <created>1596037770210</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1596037770211</updated>
+      <workItem from="1609843269888" duration="11361000" />
+      <workItem from="1610026444046" duration="139000" />
     </task>
     <task id="LOCAL-00008" summary="Добавлена загрузка аватара">
       <created>1596044022251</created>
@@ -625,7 +628,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609850199550</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Дефолтный аватар перенесен в папку img">
+      <created>1609852019341</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1609852019341</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -646,7 +656,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Локализация в JavaScript коде" />
     <MESSAGE value="Добавлена проверка пользователя на логи и удаление контакта" />
     <MESSAGE value="defaultStringLength(191)" />
     <MESSAGE value="Таблицам добавлен класс table-responsive" />
@@ -671,17 +680,18 @@
     <MESSAGE value="рефакторинг" />
     <MESSAGE value="Laravel 5 -&gt; Laravel 8" />
     <MESSAGE value="Fix Mysql Error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix Mysql Error" />
+    <MESSAGE value="Дефолтный аватар перенесен в папку img" />
+    <option name="LAST_COMMIT_MESSAGE" value="Дефолтный аватар перенесен в папку img" />
   </component>
   <component name="WindowStateProjectService">
     <state x="530" y="184" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609848580308">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="184" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1609848580308" />
-    <state x="152" y="67" width="1280" height="717" maximized="true" key="DiffContextDialog" timestamp="1609849614643">
+    <state x="152" y="67" width="1280" height="717" maximized="true" key="DiffContextDialog" timestamp="1609867109290">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="152" y="67" width="1280" height="717" maximized="true" key="DiffContextDialog/0.0.1600.860@0.0.1600.860" timestamp="1609849614643" />
+    <state x="152" y="67" width="1280" height="717" maximized="true" key="DiffContextDialog/0.0.1600.860@0.0.1600.860" timestamp="1609867109290" />
     <state x="580" y="184" key="FileChooserDialogImpl" timestamp="1609787388484">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -690,17 +700,17 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="634" y="353" key="NewPhpFileDialog/0.0.1600.860@0.0.1600.860" timestamp="1609842325846" />
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1609850200636">
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1609852020387">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1609850200636" />
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1609852020387" />
     <state x="688" y="294" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609849495472">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="688" y="294" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1609849495472" />
-    <state x="506" y="163" width="650" height="654" key="find.popup" timestamp="1609847694340">
+    <state x="506" y="163" width="650" height="654" key="find.popup" timestamp="1610026459023">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="506" y="163" width="650" height="654" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1609847694340" />
+    <state x="506" y="163" width="650" height="654" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1610026459023" />
   </component>
 </project>

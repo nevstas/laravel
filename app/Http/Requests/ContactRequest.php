@@ -26,7 +26,6 @@ class ContactRequest extends FormRequest
         return [
             'first_name' => 'required|max:255',
             'last_name' => 'required|max:255',
-            'patronymic' => 'max:255',
             'phone' => 'required|max:255',
             'address' => 'required|max:255',
             'avatar' => 'required|image|max:100000',
@@ -42,9 +41,6 @@ class ContactRequest extends FormRequest
 
             'last_name.required' => __('contacts.last_name_required'),
             'last_name.max' => __('contacts.last_name_max'),
-
-            'patronymic.required' => __('contacts.patronymic_required'),
-            'patronymic.max' => __('contacts.patronymic_max'),
 
             'phone.required' => __('contacts.phone_required'),
             'phone.max' => __('contacts.phone_max'),

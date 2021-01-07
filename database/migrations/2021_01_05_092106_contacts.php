@@ -19,7 +19,6 @@ class Contacts extends Migration
             $table->enum('status', ['public', 'private'])->default('public');
             $table->string('first_name');
             $table->string('last_name');
-            $table->string('patronymic')->nullable();
             $table->string('phone');
             $table->string('address');
             $table->string('avatar')->nullable();
