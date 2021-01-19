@@ -6,7 +6,7 @@
                 <div class="contact__phone-input">
                     <input type="text" class="form-control" name="phone[]" v-bind:placeholder="messages[language].contacts.your_phone" v-model:value="phone.value" required>
                 </div>
-                <div class="contact__phone-icon" @click="remove(index)">
+                <div class="contact__phone-icon" @click="removePhone(index)">
                     <i class="fa fa-minus-circle" aria-hidden="true"></i>
                 </div>
             </div>
@@ -42,10 +42,8 @@
                 });
                 return new_phones_arr;
             },
-            remove(index) {
+            removePhone(index) {
                 this.phones_arr.splice(index, 1);
-
-                // this.$emit('deleted', this.id);
             }
         }
     }

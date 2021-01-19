@@ -1997,8 +1997,8 @@ __webpack_require__.r(__webpack_exports__);
       });
       return new_phones_arr;
     },
-    remove: function remove(index) {
-      this.phones_arr.splice(index, 1); // this.$emit('deleted', this.id);
+    removePhone: function removePhone(index) {
+      this.phones_arr.splice(index, 1);
     }
   }
 });
@@ -41920,7 +41920,7 @@ var render = function() {
               staticClass: "contact__phone-icon",
               on: {
                 click: function($event) {
-                  return _vm.remove(index)
+                  return _vm.removePhone(index)
                 }
               }
             },
