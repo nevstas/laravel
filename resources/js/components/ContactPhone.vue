@@ -4,7 +4,13 @@
 
             <div v-for="(phone, index) in phones_arr" :key='index' class="contact__phone">
                 <div class="contact__phone-input">
-                    <input type="text" class="form-control" name="phone[]" v-bind:placeholder="messages[language].contacts.your_phone" v-model:value="phone.value" required>
+                    <input
+                        type="text"
+                        class="form-control"
+                        name="phone[]"
+                        v-bind:placeholder="messages[language].contacts.your_phone"
+                        v-model:value="phone.value"
+                        required>
                 </div>
                 <div class="contact__phone-icon" @click="removePhone(index)">
                     <i class="fa fa-minus-circle" aria-hidden="true"></i>
@@ -12,7 +18,11 @@
             </div>
 
         </div>
-        <button class="btn btn-primary btn-sm contact__phones-add" @click.prevent="addPhone">Добавить</button>
+        <button
+            class="btn btn-primary btn-sm contact__phones-add"
+            @click.prevent="addPhone"
+            v-text="messages[language].general.add">
+        </button>
     </div>
 </template>
 

@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'add' => 'Save',
+    'add' => 'Add',
     'save' => 'Save',
     'edit' => 'Edit',
     'back' => 'Back',

@@ -1973,6 +1973,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['phones'],
   data: function data() {
@@ -41936,19 +41946,16 @@ var render = function() {
       0
     ),
     _vm._v(" "),
-    _c(
-      "button",
-      {
-        staticClass: "btn btn-primary btn-sm contact__phones-add",
-        on: {
-          click: function($event) {
-            $event.preventDefault()
-            return _vm.addPhone($event)
-          }
+    _c("button", {
+      staticClass: "btn btn-primary btn-sm contact__phones-add",
+      domProps: { textContent: _vm._s(_vm.messages[_vm.language].general.add) },
+      on: {
+        click: function($event) {
+          $event.preventDefault()
+          return _vm.addPhone($event)
         }
-      },
-      [_vm._v("Добавить")]
-    )
+      }
+    })
   ])
 }
 var staticRenderFns = []

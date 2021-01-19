@@ -23,6 +23,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/ContactPhone.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ContactPhone.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/general.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/general.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,18 +173,18 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="Z:\OpenServer\domains\laravel.local\resources\views\layouts" />
+      <recent name="Z:\OpenServer\domains\laravel.local\resources\views\log" />
+      <recent name="Z:\OpenServer\domains\laravel.local\resources\views\contact" />
+      <recent name="Z:\OpenServer\domains\laravel.local\resources\views\member_contact" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="Z:\OpenServer\domains\laravel.local\public\img" />
       <recent name="Z:\OpenServer\domains\laravel.local\storage\app\public\avatar" />
       <recent name="Z:\OpenServer\domains\laravel.local\storage\app\public\users_avatar" />
       <recent name="Z:\OpenServer\domains\laravel.local\resources\sass" />
       <recent name="Z:\OpenServer\domains\laravel.local\app" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="Z:\OpenServer\domains\laravel.local\resources\views\layouts" />
-      <recent name="Z:\OpenServer\domains\laravel.local\resources\views\log" />
-      <recent name="Z:\OpenServer\domains\laravel.local\resources\views\contact" />
-      <recent name="Z:\OpenServer\domains\laravel.local\resources\views\member_contact" />
     </key>
   </component>
   <component name="RunManager">
@@ -303,14 +304,7 @@
       <workItem from="1610989343890" duration="1355000" />
       <workItem from="1610990746068" duration="6158000" />
       <workItem from="1611043786492" duration="8025000" />
-      <workItem from="1611052164970" duration="7842000" />
-    </task>
-    <task id="LOCAL-00012" summary="Логи вынесены на отдельную страницу">
-      <created>1596300452121</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1596300452121</updated>
+      <workItem from="1611052164970" duration="8524000" />
     </task>
     <task id="LOCAL-00013" summary="Добавлена локализация">
       <created>1596367698970</created>
@@ -648,7 +642,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611059217965</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Добавление нескольких телефонов vue.js">
+      <created>1611060064868</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1611060064868</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -717,17 +718,17 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="647" y="343" key="VCS.ChangelistChooser/0.0.1600.860@0.0.1600.860" timestamp="1610643632019" />
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1611059219094">
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1611060069989">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1611059219094" />
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1611060069989" />
     <state x="688" y="294" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609849495472">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="688" y="294" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1609849495472" />
-    <state x="506" y="163" width="650" height="654" key="find.popup" timestamp="1611055835140">
+    <state x="506" y="163" width="650" height="654" key="find.popup" timestamp="1611060431183">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="506" y="163" width="650" height="654" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1611055835140" />
+    <state x="506" y="163" width="650" height="654" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1611060431183" />
   </component>
 </project>
