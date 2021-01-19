@@ -34,7 +34,7 @@ class AppServiceProvider extends ServiceProvider
         View::composer( 'layouts.template', function ( $view ) {
             return $view->with( [
                 'messages' => ExportLocalization::export()->toArray(),
-                'language' => SESSION::get('locale'),
+                'language' => SESSION::get('locale') ?? config('app.locale'),
             ] );
         } );
     }
