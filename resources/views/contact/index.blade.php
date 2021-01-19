@@ -24,7 +24,13 @@
                     <td><img class="contact__table-img" src="{{ asset($contact->avatar) }}"></td>
                     <td><a href="{{ route('contacts.show', $contact->id) }}">{{ $contact->first_name }}</a></td>
                     <td>{{ $contact->last_name }}</td>
-                    <td><a href="tel:{{ $contact->phone }}">{{ $contact->phone }}</a></td>
+                    <td>
+                        @foreach($contact->phone_arr as $phone)
+                            <div>
+                                <a href="tel:{{ $phone }}">{{ $phone }}</a>
+                            </div>
+                        @endforeach
+                    </td>
                     <td>{{ $contact->address }}</td>
                     <td>{{ $contact->counter_view }}</td>
                 </tr>

@@ -29,7 +29,13 @@
                     <td><img class="contact__table-img" src="{{ asset($contact->avatar) }}"></td>
                     <td><a href="{{ route('member.contacts.show', $contact->id) }}">{{ $contact->first_name }}</a></td>
                     <td>{{ $contact->last_name }}</td>
-                    <td><a href="tel:{{ $contact->phone }}">{{ $contact->phone }}</a></td>
+                    <td>
+                        @foreach($contact->phone_arr as $phone)
+                            <div>
+                                <a href="tel:{{ $phone }}">{{ $phone }}</a>
+                            </div>
+                        @endforeach
+                    </td>
                     <td>{{ $contact->address }}</td>
                     <td>{{ $contact->counter_view }}</td>
                     <td>{{ $contact->status_human }}</td>
@@ -59,14 +65,4 @@
 
     {{ $contacts->links() }}
 
-    <script>
-        var translations = {
-            contacts: {
-                are_you_sure: "@lang('contacts.are_you_sure')",
-                you_wont_be_able_to_revert_this: "@lang('contacts.you_wont_be_able_to_revert_this')",
-                yes_delete_it: "@lang('contacts.yes_delete_it')",
-                no_cancel: "@lang('contacts.no_cancel')",
-            },
-        };
-    </script>
 @endsection

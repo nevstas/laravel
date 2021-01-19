@@ -20,7 +20,13 @@
             </tr>
             <tr>
                 <td>@lang('contacts.phone')</td>
-                <td><a href="tel:{{ $contact->phone }}">{{ $contact->phone }}</a></td>
+                <td>
+                    @foreach($contact->phone_arr as $phone)
+                        <div>
+                            <a href="tel:{{ $phone }}">{{ $phone }}</a>
+                        </div>
+                    @endforeach
+                </td>
             </tr>
             <tr>
                 <td>@lang('contacts.address')</td>

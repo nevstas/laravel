@@ -33,7 +33,7 @@
             <div class="form-group row">
                 <label for="phone" class="col-sm-2 col-form-label">@lang('contacts.phone')</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="phone" name="phone" placeholder="@lang('contacts.your_phone')" value="{{ old('phone', $contact->phone) }}">
+                    <contact-phone :phones="{{ old('phone') ? json_encode(old('phone')) : $contact->phone }}"></contact-phone>
                 </div>
             </div>
             <div class="form-group row">

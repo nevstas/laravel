@@ -7,7 +7,19 @@
 require('./bootstrap');
 // require('sweetalert2');
 
-// window.Vue = require('vue');
+window.Vue = require('vue');
+
+Vue.prototype.messages = window.messages;
+Vue.prototype.language = window.language;
+
+Vue.mixin({
+    data: function() {
+        return {
+            messages: window.messages,
+            language: window.language,
+        }
+    }
+})
 
 /**
  * The following block of code may be used to automatically register your
@@ -20,7 +32,7 @@ require('./bootstrap');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-// Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('contact-phone', require('./components/ContactPhone.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -28,21 +40,21 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-// const app = new Vue({
-//     el: '#app',
-// });
+const app = new Vue({
+    el: '#app',
+});
 
 $('.contact__btn-remove').click(function(){
     event.preventDefault();
     Swal.fire({
-        title: translations.contacts.are_you_sure,
-        text: translations.contacts.you_wont_be_able_to_revert_this,
+        title: messages[language].contacts.are_you_sure,
+        text: messages[language].contacts.you_wont_be_able_to_revert_this,
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: translations.contacts.yes_delete_it,
-        cancelButtonText: translations.contacts.no_cancel,
+        confirmButtonText: messages[language].contacts.yes_delete_it,
+        cancelButtonText: messages[language].contacts.no_cancel,
     }).then((result) => {
         if (result.value) {
             $(this).parent().find('.contact__form-remove').submit();

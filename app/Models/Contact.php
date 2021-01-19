@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Http\Controllers\SystemController;
 
 class Contact extends Model
 {
@@ -23,19 +24,19 @@ class Contact extends Model
     ////////////////////////
     protected function getFirstNameAttribute($value)
     {
-        return \App\Http\Controllers\SystemController::mb_ucfirst($value);
+        return SystemController::mb_ucfirst($value);
     }
 
     protected function getLastNameAttribute($value)
     {
-        return \App\Http\Controllers\SystemController::mb_ucfirst($value);
+        return SystemController::mb_ucfirst($value);
     }
 
     protected function getFormatNameAttribute()
     {
-        $name = \App\Http\Controllers\SystemController::mb_ucfirst(mb_substr($this->first_name, 0, 1))
+        $name = SystemController::mb_ucfirst(mb_substr($this->first_name, 0, 1))
             . '. '
-            . \App\Http\Controllers\SystemController::mb_ucfirst($this->last_name);
+            . SystemController::mb_ucfirst($this->last_name);
 
         return $name;
     }
@@ -50,22 +51,32 @@ class Contact extends Model
         return $value ? 'storage/' . $value : 'img/no-image.jpg';
     }
 
+    protected function getPhoneArrAttribute()
+    {
+        return json_decode($this->phone, true);
+    }
+
     ////////////////////////
     /// Сетеры
     ////////////////////////
     protected function setFirstNameAttribute($value)
     {
-        $this->attributes['first_name'] = \App\Http\Controllers\SystemController::mb_ucfirst($value);
+        $this->attributes['first_name'] = SystemController::mb_ucfirst($value);
     }
 
     protected function setLastNameAttribute($value)
     {
-        $this->attributes['last_name'] = \App\Http\Controllers\SystemController::mb_ucfirst($value);
+        $this->attributes['last_name'] = SystemController::mb_ucfirst($value);
     }
 
     protected function setPhoneAttribute($value)
     {
-        $this->attributes['phone'] = preg_replace("/[^0-9\+]+/", "", $value);
+        if (is_array($value)) {
+            foreach ($value as $key => $phone) {
+                $value[$key] = preg_replace("/[^0-9\+]+/", "", $phone);
+            }
+        }
+        $this->attributes['phone'] = json_encode($value);
     }
 
     public function logs()

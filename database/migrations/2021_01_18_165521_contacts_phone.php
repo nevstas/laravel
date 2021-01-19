@@ -3,8 +3,9 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use App\Models\Contact;
 
-class UsersAvatar extends Migration
+class ContactsPhone extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +14,15 @@ class UsersAvatar extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->string('avatar')->after('email')->nullable();
+        Schema::table('contacts', function (Blueprint $table) {
+            $table->json('phone')->change();
         });
+
+        $contacts = Contact::all();
+        foreach ($contacts as $contact) {
+            $contact->phone = [$contact->phone];
+            $contact->save();
+        }
     }
 
     /**
@@ -25,8 +32,6 @@ class UsersAvatar extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('avatar');
-        });
+        //
     }
 }

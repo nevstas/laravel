@@ -19,20 +19,32 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44c49863-f496-491f-9870-43796b07f708" name="Default Changelist" comment="Дефолтный аватар перенесен в папку img">
+    <list default="true" id="44c49863-f496-491f-9870-43796b07f708" name="Default Changelist" comment="Удалено отчество">
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_18_165521_contacts_phone.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/debugbar/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel.local.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel.local.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ContactRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ContactRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/MemberContact.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MemberContact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_05_092106_contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_05_092106_contacts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/contacts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ru/contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ru/contacts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_05_092853_users_avatar.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_05_092853_users_avatar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ContactPhone.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/contact/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/contact/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/member_contact/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/member_contact/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/member_contact/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/member_contact/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/member_contact/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/member_contact/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/member_contact/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/member_contact/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +167,13 @@
       <path value="$PROJECT_DIR$/vendor/facade/ignition" />
       <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/kg-bot/laravel-localization-to-vue" />
     </include_path>
   </component>
   <component name="ProjectId" id="1fAhvS29A3gPsZUHZqiy6m092oK" />
@@ -169,7 +188,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
+    <property name="last_opened_file_path" value="C:/projects/laravel_Lets-Build-a-Forum-in-Laravel-master" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -290,14 +309,23 @@
       <workItem from="1609838604611" duration="2363000" />
       <workItem from="1609841007001" duration="1996000" />
       <workItem from="1609843269888" duration="11361000" />
-      <workItem from="1610026444046" duration="139000" />
-    </task>
-    <task id="LOCAL-00008" summary="Добавлена загрузка аватара">
-      <created>1596044022251</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1596044022251</updated>
+      <workItem from="1610026444046" duration="566000" />
+      <workItem from="1610198878329" duration="3208000" />
+      <workItem from="1610218485084" duration="62000" />
+      <workItem from="1610221814281" duration="1637000" />
+      <workItem from="1610385103190" duration="1773000" />
+      <workItem from="1610641222069" duration="646000" />
+      <workItem from="1610643544092" duration="1787000" />
+      <workItem from="1610685983208" duration="1899000" />
+      <workItem from="1610700342078" duration="567000" />
+      <workItem from="1610799347121" duration="1211000" />
+      <workItem from="1610831956809" duration="743000" />
+      <workItem from="1610985633328" duration="612000" />
+      <workItem from="1610988812462" duration="364000" />
+      <workItem from="1610989343890" duration="1355000" />
+      <workItem from="1610990746068" duration="6158000" />
+      <workItem from="1611043786492" duration="8025000" />
+      <workItem from="1611052164970" duration="3732000" />
     </task>
     <task id="LOCAL-00009" summary="Добавлены имена для Route">
       <created>1596120584991</created>
@@ -635,7 +663,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609852019341</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Удалено отчество">
+      <created>1610026648047</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1610026648047</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,7 +691,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Добавлена проверка пользователя на логи и удаление контакта" />
     <MESSAGE value="defaultStringLength(191)" />
     <MESSAGE value="Таблицам добавлен класс table-responsive" />
     <MESSAGE value="Редирект авторизованных пользователей при открытии страниц авторизации, регистрации и т.д." />
@@ -681,36 +715,41 @@
     <MESSAGE value="Laravel 5 -&gt; Laravel 8" />
     <MESSAGE value="Fix Mysql Error" />
     <MESSAGE value="Дефолтный аватар перенесен в папку img" />
-    <option name="LAST_COMMIT_MESSAGE" value="Дефолтный аватар перенесен в папку img" />
+    <MESSAGE value="Удалено отчество" />
+    <option name="LAST_COMMIT_MESSAGE" value="Удалено отчество" />
   </component>
   <component name="WindowStateProjectService">
     <state x="530" y="184" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609848580308">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="184" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1609848580308" />
-    <state x="152" y="67" width="1280" height="717" maximized="true" key="DiffContextDialog" timestamp="1609867109290">
+    <state x="152" y="67" width="1280" height="717" maximized="true" key="DiffContextDialog" timestamp="1611055903902">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="152" y="67" width="1280" height="717" maximized="true" key="DiffContextDialog/0.0.1600.860@0.0.1600.860" timestamp="1609867109290" />
-    <state x="580" y="184" key="FileChooserDialogImpl" timestamp="1609787388484">
+    <state x="152" y="67" width="1280" height="717" maximized="true" key="DiffContextDialog/0.0.1600.860@0.0.1600.860" timestamp="1611055903902" />
+    <state x="580" y="184" key="FileChooserDialogImpl" timestamp="1610990717853">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="580" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1609787388484" />
+    <state x="580" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1610990717853" />
     <state x="634" y="353" key="NewPhpFileDialog" timestamp="1609842325846">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="634" y="353" key="NewPhpFileDialog/0.0.1600.860@0.0.1600.860" timestamp="1609842325846" />
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1609852020387">
+    <state x="647" y="343" key="VCS.ChangelistChooser" timestamp="1610643632019">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1609852020387" />
+    <state x="647" y="343" key="VCS.ChangelistChooser/0.0.1600.860@0.0.1600.860" timestamp="1610643632019" />
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1610026649227">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1610026649227" />
     <state x="688" y="294" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609849495472">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="688" y="294" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1609849495472" />
-    <state x="506" y="163" width="650" height="654" key="find.popup" timestamp="1610026459023">
+    <state x="506" y="163" width="650" height="654" key="find.popup" timestamp="1611055835140">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="506" y="163" width="650" height="654" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1610026459023" />
+    <state x="506" y="163" width="650" height="654" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1611055835140" />
   </component>
 </project>
