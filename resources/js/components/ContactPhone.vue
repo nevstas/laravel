@@ -13,7 +13,7 @@
                         required>
                 </div>
                 <div class="contact__phone-icon" @click="removePhone(index)">
-                    <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                    <i class="fa fa-times" aria-hidden="true"></i>
                 </div>
             </div>
 
@@ -76,5 +76,6 @@
     }
     .contact__phone-icon i {
         color: red;
+        cursor: pointer;
     }
 </style>

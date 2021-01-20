@@ -6455,7 +6455,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.contact__phones-add {\n    margin-top: 10px;\n}\n.contact__phone {\n    margin-bottom: 10px;\n}\n.contact__phone-input {\n    display: inline-block;\n    width: calc(100% - 25px);\n}\n.contact__phone-icon {\n    display: inline-block;\n    width: 20px;\n}\n.contact__phone-icon i {\n    color: red;\n}\n", ""]);
+exports.push([module.i, "\n.contact__phones-add {\n    margin-top: 10px;\n}\n.contact__phone {\n    margin-bottom: 10px;\n}\n.contact__phone-input {\n    display: inline-block;\n    width: calc(100% - 25px);\n}\n.contact__phone-icon {\n    display: inline-block;\n    width: 20px;\n}\n.contact__phone-icon i {\n    color: red;\n    cursor: pointer;\n}\n", ""]);
 
 // exports
 
@@ -41936,7 +41936,7 @@ var render = function() {
             },
             [
               _c("i", {
-                staticClass: "fa fa-minus-circle",
+                staticClass: "fa fa-times",
                 attrs: { "aria-hidden": "true" }
               })
             ]
